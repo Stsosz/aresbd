@@ -1,6 +1,5 @@
 # User Files
-AresBD.xcodeproj/xcuserdata/*
-
+xcuserdata
 # Object files
 *.o
 *.ko
