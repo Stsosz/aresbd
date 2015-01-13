@@ -9,5 +9,10 @@
 #ifndef AresBD_main_h
 #define AresBD_main_h
 
+void printError()
+{
+    printf("Something went wrong here :/\n");
+    printf("");
+}
 
 #endif

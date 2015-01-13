@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A0CB8F51A658CA60068D820 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		0A6CC8E31A646ACC008A89EC /* AresBD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AresBD; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6CC8E61A646ACC008A89EC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				0A6CC8E61A646ACC008A89EC /* main.c */,
+				0A0CB8F51A658CA60068D820 /* main.h */,
 			);
 			path = AresBD;
 			sourceTree = "<group>";
