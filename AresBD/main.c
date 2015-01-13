@@ -10,9 +10,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include "main.h"
 
-int
-main (int argc, char **argv)
+int main (int argc, char **argv)
 {
     int aflag = 0;
     int bflag = 0;
@@ -53,3 +53,4 @@ main (int argc, char **argv)
         printf ("Non-option argument %s\n", argv[index]);
     return 0;
 }
+
