@@ -16,53 +16,33 @@ int main (int argc, char **argv)
 {
     int openShell = 0;
     int bflag = 0;
-    char *connectport = NULL;
+    int connectPort = 2222;
     int index;
     int c;
+    int displayHelp = 0;
     
     opterr = 0;
     while ((c = getopt (argc, argv, "s b p:")) != -1)
         switch (c)
     {
         case 's':
-            
-            /* This will open the Reverse TCP connection, almost like
-            NetCat!*/
-            
-            // Le Code //
-            
             openShell = 1;
             break;
-            
         case 'h':
-            
-            // Help Dialog //
-            
-            printf("AresBD by Stsosz");
-            
+            displayHelp = 1;
             break;
-            
         case 'b':
-            
             bflag = 1;
-            
             break;
-            
         case 'p':
-            
-            // Set Connection Port //
-            
-            connectport = optarg;
-            
+            connectPort = atoi(optarg);
             break;
             
         case '?':
             if (optopt == 'c')
                 fprintf (stderr, "Option -%c requires an argument.\n", optopt);
-            
             else if (isprint (optopt))
                 fprintf (stderr, "Unknown option `-%c'.\n", optopt);
-            
             else
                 fprintf (stderr,
                          "Unknown option character `\\x%x'.\n",
@@ -71,11 +51,12 @@ int main (int argc, char **argv)
         default:
             abort ();
     }
-    printf ("Connection = %d, bflag = %d, Port = %s\n",
-            openShell, bflag, connectport);
+    printf ("Connection = %d, bflag = %d, Port = %d\n", openShell, bflag, connectPort);
 
     for (index = optind; index < argc; index++)
         printf ("Non-option argument %s\n", argv[index]);
     return 0;
+    
+    
 }
 

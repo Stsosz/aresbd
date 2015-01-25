@@ -9,4 +9,6 @@
 #ifndef AresBD_main_h
 #define AresBD_main_h
 
+void cow();
+
 #endif
