@@ -1,4 +1,0 @@
-#!/bin/bash
-echo "An example script n' stuff"
-echo "$1"
-exit
