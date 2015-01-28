@@ -1,5 +1,6 @@
 #!/bin/bash
 # AresBD Control Panel by Stsosz
+# Define Variables
 
 PS3='ABDConsole: '
 options=("Set Port" "Set Script" "Set Attack Mode" "Show Options" "Start Attack" "Quit")
@@ -33,6 +34,7 @@ showOpts()
 	echo Hi
 }
 
+# User Menu
 select opt in "${options[@]}"
 do
     case $opt in
