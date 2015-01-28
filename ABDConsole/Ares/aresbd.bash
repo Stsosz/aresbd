@@ -1,6 +1,9 @@
 #!/bin/bash
 # AresBD Control Panel by Stsosz
 
+PS3='ABDConsole: '
+options=("Set Port" "Set Script" "Set Attack Mode" "Show Options" "Start Attack" "Quit")
+
 setPort()
 {
 	read -rp "Receiving port: " PORT
@@ -30,8 +33,6 @@ showOpts()
 	echo Hi
 }
 
-PS3='ABDConsole: '
-options=("Set Port" "Set Script" "Show Options" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
