@@ -1,0 +1,10 @@
+#!/bin/bash
+# Set Port module for AresBD by Stsosz
+attackShell()
+{
+	if [[ -z "$PORT" ]]; then
+		echo "You need to set the port first!"
+	else
+		nc -l -p $PORT
+	fi
+}

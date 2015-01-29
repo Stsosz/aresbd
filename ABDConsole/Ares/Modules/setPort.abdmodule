@@ -1,0 +1,6 @@
+#!/bin/bash
+# Set Port module for AresBD by Stsosz
+setPort()
+{
+	read -rp "Receiving port: " PORT
+}

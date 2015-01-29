@@ -1,0 +1,16 @@
+#!/bin/bash
+# Set Port module for AresBD by Stsosz
+attackLogic()
+{
+	if [[ -z "$ATTACKMODE" ]]; then
+	echo "You need to set an attack mode first!"
+	fi
+	
+	if [[ $ATTACKMODE = "Shell" ]]; then
+		attackShell
+	fi
+	
+	if [[ $ATTACKMODE = "Script" ]]; then
+		attackScript
+	fi
+}

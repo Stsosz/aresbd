@@ -1,0 +1,7 @@
+#!/bin/bash
+# Example module for AresBD by Stsosz
+exampleModule()
+{
+	# Code
+	echo "HI"
+}

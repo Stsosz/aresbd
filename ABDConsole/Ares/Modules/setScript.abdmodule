@@ -1,0 +1,13 @@
+#!/bin/bash
+# Set Script module for AresBD by Stsosz
+source ~/Ares/aresbd.conf
+setScript()
+{
+	cd $SCRIPTROOT
+	PS3=$ARESSCRIPTROOT
+	select SCRIPT in *; do
+		PS3=$MENUPROMPT
+		cd $ARESROOT
+	break
+done
+}
