@@ -101,7 +101,7 @@ done
 # Listen for incoming TCP connections.
 function attackShell()
 {
-	if [ -z "$PORT" ]; then
+	if [[ -z "$PORT" ]]; then
 		echo "You need to set the port first!"
 	else
 		nc -l -p $PORT
@@ -111,9 +111,9 @@ function attackShell()
 # Listen for incoming TCP connections, and feed them the specified script.
 function attackScript()
 {
-	if [ -z "$PORT" ]; then
+	if [[ -z "$PORT" ]]; then
 		echo "You need to set the port first!"
-	elif [ -z "$SCRIPT" ]; then
+	elif [[ -z "$SCRIPT" ]]; then
 		echo "You need to set the script first!"
 	else
 		echo Yay! It worked!
@@ -123,19 +123,19 @@ function attackScript()
 # Show the user what settings they have chosen
 function showOpts()
 {
-	if [ -z "$PORT" ]; then
+	if [[ -z "$PORT" ]]; then
 		echo "No port chosen. "
 	else
 		echo Port: $PORT
 	fi
 	
-	if [ -z "$SCRIPT" ]; then
+	if [[ -z "$SCRIPT" ]]; then
 		echo "No script chosen. "
 	else
 		echo Script: $SCRIPT
 	fi
 	
-	if [ -z "$ATTACKMODE" ]; then
+	if [[ -z "$ATTACKMODE" ]]; then
 		echo "No attack mode chosen. "
 	else
 		echo Attack Mode: $ATTACKMODE
