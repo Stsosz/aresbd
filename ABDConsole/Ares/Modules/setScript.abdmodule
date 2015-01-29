@@ -3,8 +3,8 @@
 source ~/Ares/aresbd.conf
 setScript()
 {
-	cd $SCRIPTROOT
-	PS3=$ARESSCRIPTROOT
+	cd $ARESSCRIPTROOT
+	PS3=$SCRIPTPROMPT
 	select SCRIPT in *; do
 		PS3=$MENUPROMPT
 		cd $ARESROOT
