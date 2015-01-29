@@ -57,14 +57,14 @@ function showHelp()
 	echo "I don't even..."
 }
 
-setPort()
 # Set the port to listen on
+function setPort()
 {
 	read -rp "Receiving port: " PORT
 }
 
-setAttack()
 # Set the attack mode
+function setAttack()
 {
 	PS3='Attack Mode: '
 	options=("Shell" "Script")
@@ -86,8 +86,8 @@ setAttack()
 	done
 }
 
-setScript()
 # Choose a file to use with attackScript
+function setScript()
 {
 	cd ~/Ares/Scripts
 	PS3='Script: '
@@ -98,8 +98,8 @@ setScript()
 done
 }
 
-attackShell()
 # Listen for incoming TCP connections.
+function attackShell()
 {
 	if [ -z "$PORT" ]; then
 		echo "You need to set the port first!"
@@ -108,8 +108,8 @@ attackShell()
 	fi
 }
 
-attackScript()
 # Listen for incoming TCP connections, and feed them the specified script.
+function attackScript()
 {
 	if [ -z "$PORT" ]; then
 		echo "You need to set the port first!"
@@ -120,8 +120,8 @@ attackScript()
 	fi
 }
 
-showOpts()
 # Show the user what settings they have chosen
+function showOpts()
 {
 	if [ -z "$PORT" ]; then
 		echo "No port chosen. "
