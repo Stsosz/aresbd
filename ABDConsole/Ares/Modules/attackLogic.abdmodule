@@ -1,5 +1,6 @@
 #!/bin/bash
 # Set Port module for AresBD by Stsosz
+source ~/Ares/aresbd.conf
 attackLogic()
 {
 	if [[ -z "$ATTACKMODE" ]]; then

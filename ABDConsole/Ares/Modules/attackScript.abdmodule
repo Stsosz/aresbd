@@ -1,5 +1,6 @@
 #!/bin/bash
 # Script attack module for AresBD by Stsosz
+source ~/Ares/aresbd.conf
 attackScript()
 {
 	if [[ -z "$PORT" ]]; then
