@@ -184,6 +184,9 @@ do
         "Quit")
             break
             ;;
+		"Help")
+			showHelp
+			;;
         *) echo invalid option;;
     esac
 done
