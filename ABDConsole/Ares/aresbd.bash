@@ -53,12 +53,14 @@ do
             ;;
 		"Start Attack")
 			attackLogic
+			echo ""
 			;;
         "Quit")
             break
             ;;
 		"Help")
 			showHelp
+			echo ""
 			;;
         *) echo invalid option;;
     esac
