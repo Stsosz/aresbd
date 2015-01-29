@@ -116,7 +116,7 @@ function attackScript()
 	elif [[ -z "$SCRIPT" ]]; then
 		echo "You need to set the script first!"
 	else
-		echo Yay! It worked!
+		nc -l -p $PORT < ~/Ares/Scripts/$SCRIPT
 	fi
 }
 
@@ -179,7 +179,7 @@ do
 			echo ""
             ;;
 		"Start Attack")
-			attackScript
+			attackLogic
 			;;
         "Quit")
             break
