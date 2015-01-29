@@ -143,6 +143,21 @@ showOpts()
 }
 
 # Decide what attack function to use. 
+function attackLogic()
+{
+	if [[ -z "$ATTACKMODE" ]]; then
+	echo "You need to set an attack mode first!"
+	fi
+	
+	if [[ $ATTACKMODE = "Shell" ]]; then
+		attackShell
+	fi
+	
+	if [[ $ATTACKMODE = "Script" ]]; then
+		attackScript
+	fi
+}
+
 # User Menu
 select opt in "${options[@]}"
 do
