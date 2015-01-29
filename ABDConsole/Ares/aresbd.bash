@@ -3,7 +3,59 @@
 
 # Define Variables
 PS3='ABDConsole: '
-options=("Set Port" "Set Script" "Set Attack Mode" "Show Options" "Start Attack" "Quit")
+options=("Set Port" "Set Script" "Set Attack Mode" "Show Options" "Start Attack" "Help" "Quit")
+
+echo ===========================================================
+echo "                         ____  _____                     ";
+echo "     /\                 |  _ \|  __ \                    ";
+echo "    /  \   _ __ ___  ___| |_) | |  | |                   ";
+echo "   / /\ \ | '__/ _ \/ __|  _ <| |  | |                   ";
+echo "  / ____ \| | |  __/\__ \ |_) | |__| |                   ";
+echo " /_/    \_\_|  \___||___/____/|_____/ ____   _____ ______";
+echo " | |            / ____|__   __/ ____|/ __ \ / ____|___  /";
+echo " | |__  _   _  | (___    | | | (___ | |  | | (___    / / ";
+echo " | '_ \| | | |  \___ \   | |  \___ \| |  | |\___ \  / /  ";	
+echo " | |_) | |_| |  ____) |  | |  ____) | |__| |____) |/ /__ ";
+echo " |_.__/ \__, | |_____/   |_| |_____/ \____/|_____//_____|";
+echo "         __/ |                                           ";
+echo "        |___/                                            ";
+echo ===========================================================
+
+function showHelp()
+{
+	echo "Usage: aresbd"
+	echo ""
+	
+	echo "Set Port: "
+	echo "Set the port to listen on"
+	echo ""
+	
+	echo "Set Script: "
+	echo "Choose a script to send to the target in Script mode"
+	echo ""
+	
+	echo "Set Attack Mode: "
+	echo "Chose from 2 modes: Script and Shell"
+	echo "In script mode, the selected script is"
+	echo "fed line-by-line to the target."
+	echo "In Shell mode, a remote shell, almost"
+	echo "like SSH, is connected to the target."	
+	echo ""
+	
+	echo "Show Options: "
+	echo "List all user selected options."
+	echo ""
+	
+	echo "Start Attack: "
+	echo "Initiate either a Shell or Script attack."
+	
+	echo "Help: "
+	echo "Show this message!"
+	echo ""
+
+	echo "Quit: "
+	echo "I don't even..."
+}
 
 setPort()
 # Set the port to listen on
