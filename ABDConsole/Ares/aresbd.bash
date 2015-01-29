@@ -1,16 +1,18 @@
 #!/bin/bash
 # AresBD Control Panel by Stsosz
-# Define Variables
 
+# Define Variables
 PS3='ABDConsole: '
 options=("Set Port" "Set Script" "Set Attack Mode" "Show Options" "Start Attack" "Quit")
 
 setPort()
+# Set the port to listen on
 {
 	read -rp "Receiving port: " PORT
 }
 
 setAttack()
+# Set the attack mode
 {
 	PS3='Attack Mode: '
 	options=("Shell" "Script")
@@ -33,6 +35,7 @@ setAttack()
 }
 
 setScript()
+# Choose a file to use with attackScript
 {
 	cd ~/Ares/Scripts
 	PS3='Script: '
@@ -44,6 +47,7 @@ done
 }
 
 attackShell()
+# Listen for incoming TCP connections.
 {
 	if [ -z "$PORT" ]; then
 		echo "You need to set the port first!"
@@ -53,6 +57,7 @@ attackShell()
 }
 
 attackScript()
+# Listen for incoming TCP connections, and feed them the specified script.
 {
 	if [ -z "$PORT" ]; then
 		echo "You need to set the port first!"
@@ -64,6 +69,7 @@ attackScript()
 }
 
 showOpts()
+# Show the user what settings they have chosen
 {
 	if [ -z "$PORT" ]; then
 		echo "No port chosen. "
@@ -84,6 +90,7 @@ showOpts()
 	fi
 }
 
+# Decide what attack function to use. 
 # User Menu
 select opt in "${options[@]}"
 do
