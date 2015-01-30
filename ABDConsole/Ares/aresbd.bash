@@ -12,6 +12,7 @@ for file in * ; do
     source "$file"
   fi
 done
+
 cd ~/Ares
 
 echo ===========================================================
