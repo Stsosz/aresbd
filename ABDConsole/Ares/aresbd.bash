@@ -33,7 +33,7 @@ echo "=========================================================="
 
 
 # User Menu
-select opt in "${options[@]}"
+select opt in "${mainoptions[@]}"
 do
     case $opt in
         "Set Port")
