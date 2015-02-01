@@ -21,7 +21,6 @@
 		0A93DF591A7EBB620068D36D /* AppTroll */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AppTroll; sourceTree = "<group>"; };
 		0A93DF5A1A7EBB620068D36D /* Command-Q */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Command-Q"; sourceTree = "<group>"; };
 		0A93DF5B1A7EBB620068D36D /* KillFPS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = KillFPS; sourceTree = "<group>"; };
-		0A93DF5D1A7EBB620068D36D /* install-AresBD.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-AresBD.bash"; sourceTree = "<group>"; };
 		0A93DF5E1A7EBB620068D36D /* Control Panel.gliffy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Control Panel.gliffy"; sourceTree = "<group>"; };
 		0A93DF5F1A7EBB620068D36D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0A93DF631A7EBB620068D36D /* ares.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ares.conf; sourceTree = "<group>"; };
@@ -43,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				0A93DF4B1A7EBB620068D36D /* Ares */,
-				0A93DF5C1A7EBB620068D36D /* Installer */,
 			);
 			path = ABDConsole;
 			sourceTree = "<group>";
@@ -83,14 +81,6 @@
 				0A93DF5B1A7EBB620068D36D /* KillFPS */,
 			);
 			path = Scripts;
-			sourceTree = "<group>";
-		};
-		0A93DF5C1A7EBB620068D36D /* Installer */ = {
-			isa = PBXGroup;
-			children = (
-				0A93DF5D1A7EBB620068D36D /* install-AresBD.bash */,
-			);
-			path = Installer;
 			sourceTree = "<group>";
 		};
 		0A93DF601A7EBB620068D36D /* Old */ = {
