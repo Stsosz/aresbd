@@ -1,5 +1,6 @@
 #!/bin/bash
 # AresBD Control Panel by Stsosz
+# © 2015 Stsosz All Rights Reserved
 # Don't be an asshole. Don't use this without permission. I'm not responsible for
 # Any stupid stuff you do with AresBD.
 # Define Variables
