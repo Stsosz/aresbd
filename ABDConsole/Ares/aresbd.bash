@@ -1,7 +1,9 @@
 #!/bin/bash
 # AresBD Control Panel by Stsosz
-
+# Don't be an asshole. Don't use this without permission. I'm not responsible for
+# Any stupid stuff you do with AresBD.
 # Define Variables
+
 source ~/Ares/aresbd.conf
 PS3=$MENUPROMPT
 
