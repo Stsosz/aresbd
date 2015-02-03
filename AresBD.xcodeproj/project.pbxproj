@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0A93DF4C1A7EBB620068D36D /* aresbd.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = aresbd.bash; sourceTree = "<group>"; };
+		0A93DF4C1A7EBB620068D36D /* aresbd.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; lineEnding = 0; path = aresbd.bash; sourceTree = "<group>"; usesTabs = 0; };
 		0A93DF4D1A7EBB620068D36D /* AresBD.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AresBD.conf; sourceTree = "<group>"; };
 		0A93DF4F1A7EBB620068D36D /* attackLogic.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = attackLogic.abdmodule; sourceTree = "<group>"; };
 		0A93DF501A7EBB620068D36D /* attackScript.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = attackScript.abdmodule; sourceTree = "<group>"; };
