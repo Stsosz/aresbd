@@ -138,4 +138,4 @@ echo "Install Complete."
 echo ""
 
 echo "Shutting down..."
-
+shutdown -h now
