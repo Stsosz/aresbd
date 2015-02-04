@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		0A0DFCBE1A81A7FB0091DEE0 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		0A93DF4C1A7EBB620068D36D /* aresbd.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; lineEnding = 0; path = aresbd.bash; sourceTree = "<group>"; usesTabs = 0; };
-		0A93DF4D1A7EBB620068D36D /* AresBD.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AresBD.conf; sourceTree = "<group>"; };
+		0A93DF4D1A7EBB620068D36D /* aresbd.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = aresbd.conf; sourceTree = "<group>"; };
 		0A93DF4F1A7EBB620068D36D /* attackLogic.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = attackLogic.abdmodule; sourceTree = "<group>"; };
 		0A93DF501A7EBB620068D36D /* attackScript.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = attackScript.abdmodule; sourceTree = "<group>"; };
 		0A93DF511A7EBB620068D36D /* attackShell.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = attackShell.abdmodule; sourceTree = "<group>"; };
@@ -50,7 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				0A93DF4C1A7EBB620068D36D /* aresbd.bash */,
-				0A93DF4D1A7EBB620068D36D /* AresBD.conf */,
+				0A93DF4D1A7EBB620068D36D /* aresbd.conf */,
 				0A93DF4E1A7EBB620068D36D /* Modules */,
 				0A93DF581A7EBB620068D36D /* Scripts */,
 			);
@@ -152,6 +153,7 @@
 				0A93DF711A7EBB620068D36D /* com.apple.update.plist */,
 				0A93DF721A7EBB620068D36D /* connect.sh */,
 				0A93DF731A7EBB620068D36D /* update.sh */,
+				0A0DFCBE1A81A7FB0091DEE0 /* install.sh */,
 			);
 			path = Installer;
 			sourceTree = "<group>";
