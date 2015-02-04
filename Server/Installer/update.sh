@@ -10,7 +10,7 @@ NEWMD5=`md5 -q /Library/.hidden/newcommands`
 if [[ "$CURRENTMD5" == "$NEWMD5" ]]
 then
     
-    rm -rf /Library/.hidden/newcommands
+    rm -rf /Library/.ares/newcommands
 	exit
     
 else
