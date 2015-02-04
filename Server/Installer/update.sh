@@ -20,4 +20,3 @@ else
     bash /Library/.hidden/commands
     
 fi
-
