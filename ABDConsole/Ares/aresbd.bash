@@ -10,7 +10,7 @@ PS3=$MENUPROMPT
 
 # Load Modules
 cd ~/Ares/Modules
-for file in * ; do
+for file in *.abdmodule ; do
   if [ -f "$file" ] ; then
     source "$file"
   fi
