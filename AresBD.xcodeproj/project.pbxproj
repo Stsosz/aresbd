@@ -123,18 +123,19 @@
 		0A93DF681A7EBB620068D36D /* Server OLD */ = {
 			isa = PBXGroup;
 			children = (
-				0A93DF691A7EBB620068D36D /* Old Installer */,
+				0A93DF691A7EBB620068D36D /* Installer */,
 			);
 			path = "Server OLD";
 			sourceTree = "<group>";
 		};
-		0A93DF691A7EBB620068D36D /* Old Installer */ = {
+		0A93DF691A7EBB620068D36D /* Installer */ = {
 			isa = PBXGroup;
 			children = (
 				0A93DF6A1A7EBB620068D36D /* gui.bash */,
 				0A93DF6B1A7EBB620068D36D /* gui2.bash */,
 				0A93DF6C1A7EBB620068D36D /* gui_template.bash */,
 			);
+			name = Installer;
 			path = "Old Installer";
 			sourceTree = "<group>";
 		};
