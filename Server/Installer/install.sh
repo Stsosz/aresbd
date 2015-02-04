@@ -26,7 +26,7 @@ echo "Making sure that LaunchDaemons folder exists..."
 mkdir -p /Library/LaunchDaemons
 echo "Done."
 echo ""
-
+echo "Copying files..."
 echo "Copying connect.sh..."
 cat <<ENDOFCONNECTSH >> potato
 #!/bin/bash
