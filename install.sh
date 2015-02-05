@@ -24,15 +24,15 @@ fi
 echo 'Installing any missing packages...'
 
 if [ -f /usr/bin/apt-get ]; then
-echo "Using apt-get..."
-apt-get update && apt-get upgrade -y
-sudo apt-get install -y git
+    echo "Using apt-get..."
+    apt-get update && apt-get upgrade -y
+    sudo apt-get install -y git
 fi
 
 if [ -f /usr/bin/pacman ]; then
-echo "Using Pacman..."
-pacman –Syu
-pacman -S git
+    echo "Using Pacman..."
+    pacman –Syu
+    pacman -S git
 fi
 
 echo "Done."
