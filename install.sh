@@ -5,7 +5,16 @@
 #
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
 echo 'Welcome to the Stsosz Systems ABDConsole Installer.'
-echo 'Installing any missing packages...
+
+read -p "Would you like to proceed with installation: (Yes/No)? "
+if [[ ! $REPLY =~ ^[YyEeSs]$ ]]; then
+    echo "Exiting"
+    exit 0
+else
+    echo "Starting Installation..."
+fi
+
+echo 'Installing any missing packages...'
 
 if [ -f /usr/bin/apt-get ]; then
 echo "Using apt-get..."
