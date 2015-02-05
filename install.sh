@@ -54,4 +54,4 @@ echo "Done."
 echo "Installing Files..."
 mv -v ~/Ares-Install/ABDConsole/Ares ~/
 
-rm -rf ~/Ares-Install
+exit
