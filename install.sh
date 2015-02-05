@@ -37,11 +37,15 @@ fi
 
 echo "Done."
 
-echo "Downloading from git repo..."
+echo "Creating temporary dir..."
+TEMPFILE=`mktemp -d -t Ares-Install`
+echo "Done."
+
+echo "Downloading git repo..."
 
 cd ~
-git init Ares-Install
-cd Ares-Install
+git init $TEMPFILE
+cd $TEMPFILE
 git remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git
 git pull --depth=1 origin Release
 
