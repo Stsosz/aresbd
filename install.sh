@@ -47,7 +47,7 @@ cd ~
 git init $TEMPFILE
 cd $TEMPFILE
 git remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git
-git pull --depth=1 origin Release
+git pull --depth=1 origin Dev
 
 echo "Done."
 
