@@ -52,6 +52,12 @@ git pull --depth=1 origin Dev
 echo "Done."
 
 echo "Installing Files..."
-mv -v ~/Ares-Install/ABDConsole/Ares ~/
+mv -v "$TEMPFILE"/ABDConsole/Ares ~/
+echo "Done."
+
+
+echo "Removing temporary dir..."
+rm -rf ~/$TEMPFILE
+echo "Done."
 
 exit
