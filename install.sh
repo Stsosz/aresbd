@@ -4,6 +4,13 @@
 #  AresBD
 #
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
+
+if [[ $UID != 0 ]]; then
+echo "Please run this script with sudo:"
+echo "sudo $0 $*"
+exit 1
+fi
+
 echo 'Welcome to the Stsosz Systems ABDConsole Installer.'
 
 read -p "Would you like to proceed with installation: (Yes/No)? "
