@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0A0DFCBE1A81A7FB0091DEE0 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		0A0DFCBE1A81A7FB0091DEE0 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = install.sh; path = Server/Installer/install.sh; sourceTree = SOURCE_ROOT; usesTabs = 0; };
 		0A3B9A6E1A824E1500236273 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		0A93DF4C1A7EBB620068D36D /* abdconsole.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; lineEnding = 0; path = abdconsole.bash; sourceTree = "<group>"; usesTabs = 0; };
 		0A93DF4D1A7EBB620068D36D /* aresbd.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = aresbd.conf; sourceTree = "<group>"; };
