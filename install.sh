@@ -5,16 +5,19 @@
 #
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
 
+VERSION=1.1.3.1-Stable
+
 if [[ $UID != 0 ]]; then
 echo "Please run this script with sudo:"
 echo "sudo $0 $*"
 exit 1
 fi
 
+clear
 echo 'Welcome to the Stsosz Systems ABDConsole Installer.'
 
-read -p "Would you like to proceed with installation: (Yes/No)? "
-if [[ ! $REPLY =~ ^[YyEeSs]$ ]]; then
+read -p "Would you like to proceed with installation: (Y/N)? "
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
     echo "Exiting"
     exit 0
 else
@@ -47,13 +50,13 @@ cd ~
 git init $TEMPFILE
 cd $TEMPFILE
 git remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git
-git pull --depth=1 origin Dev
+git pull --depth=1 origin $VERSION
 
 echo "Done."
 
 echo "Installing Files..."
 mv -v "$TEMPFILE"/ABDConsole/Ares ~/
-echo "Done."
+echo "Done."l
 
 
 echo "Removing temporary dir..."
