@@ -5,7 +5,7 @@
 #
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
 
-VERSION=1.1.3.1-Stable
+VERSION=Dev
 
 if [[ $UID != 0 ]]; then
 echo "Please run this script with sudo:"
