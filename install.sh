@@ -55,8 +55,8 @@ git pull --depth=1 origin $VERSION
 echo "Done."
 
 echo "Installing Files..."
-mv -v "$TEMPFILE"/ABDConsole/Ares ~/
-echo "Done."l
+mv -v "$TEMPFILE"/ABDConsole/Ares ~/Ares
+echo "Done."
 
 
 echo "Removing temporary dir..."
