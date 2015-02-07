@@ -41,7 +41,7 @@ fi
 echo "Done."
 
 echo "Creating temporary dir..."
-TEMPFILE=`mktemp -d -t Ares-Install`
+TEMPFILE=`mktemp -d -t Ares-Install.XXX`
 echo "Done."
 
 echo "Downloading git repo..."
