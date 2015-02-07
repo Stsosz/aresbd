@@ -46,7 +46,6 @@ echo "Done."
 
 echo "Downloading git repo..."
 
-cd ~
 git init $TEMPFILE
 cd $TEMPFILE
 git remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git
