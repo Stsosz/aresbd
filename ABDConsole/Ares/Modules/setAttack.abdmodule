@@ -14,16 +14,15 @@ setAttack()
 	    case $opt in
 	        "Shell")
 	            ATTACKMODE=Shell
-				PS3=$MENUPROMPT
 				break
 	            ;;
 	        "Script")
 	            ATTACKMODE=Script
-				PS3=$MENUPROMPT
 				break
 	            ;;
 	        *) echo invalid option;;
 	    esac
 	done
+PS3=$MENUPROMPT
 }
 echo "Done."
