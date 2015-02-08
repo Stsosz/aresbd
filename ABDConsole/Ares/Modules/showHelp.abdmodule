@@ -5,7 +5,6 @@
 #  Don't be an asshole. Don't use this without permission. I'm not responsible for
 #  Any stupid stuff you do with AresBD.
 
-source ~/Ares/aresbd.conf
 echo "Loading showHelp.abdmodule..."
 showHelp()
 {
