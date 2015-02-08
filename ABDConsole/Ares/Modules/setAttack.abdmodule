@@ -9,7 +9,6 @@ echo "Loading setAttack.abdmodule..."
 setAttack()
 {
 	PS3=$ATTACKPROMPT
-	attackoptions=("Shell" "Script")
 	select opt in "${attackoptions[@]}"
 	do
 	    case $opt in
