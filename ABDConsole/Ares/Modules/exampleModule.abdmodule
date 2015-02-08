@@ -13,4 +13,4 @@ exampleModule()
 	# Code
 	echo "HI"
 }
-echo "Done."
+# echo "Done."
