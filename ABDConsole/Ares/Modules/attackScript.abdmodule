@@ -6,6 +6,7 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+echo "Loading attackScript.abdmodule..."
 attackScript()
 {
 	if [[ -z "$PORT" ]]; then
@@ -15,4 +16,4 @@ attackScript()
 	else
 		nc -l -p $PORT < ~/Ares/Scripts/$SCRIPT
 	fi
-}
+}echo "Done."

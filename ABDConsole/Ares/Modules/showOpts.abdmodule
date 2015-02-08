@@ -6,6 +6,7 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+echo "Loading showOpts.abdmodule..."
 showOpts()
 {
 	if [[ -z "$PORT" ]]; then
@@ -25,4 +26,4 @@ showOpts()
 	else
 		echo Attack Mode: $ATTACKMODE
 	fi
-}
+}echo "Done."

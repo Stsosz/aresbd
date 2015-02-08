@@ -6,7 +6,9 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+echo "Loading setPort.abdmodule..."
 setPort()
 {
 	read -rp "Receiving port: " PORT
 }
+echo "Done."

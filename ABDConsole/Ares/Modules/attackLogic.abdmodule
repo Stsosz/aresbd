@@ -6,6 +6,7 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+echo "Loading attackLogic.abdmodule..."
 attackLogic()
 {
 	if [[ -z "$ATTACKMODE" ]]; then
@@ -19,4 +20,4 @@ attackLogic()
 	if [[ $ATTACKMODE = "Script" ]]; then
 		attackScript
 	fi
-}
+}echo "Done."

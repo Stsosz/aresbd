@@ -6,6 +6,7 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+echo "Loading setScript.abdmodule..."
 setScript()
 {
 	cd $ARESSCRIPTROOT
@@ -15,4 +16,4 @@ setScript()
 		cd $ARESROOT
 	break
 done
-}
+}echo "Done."

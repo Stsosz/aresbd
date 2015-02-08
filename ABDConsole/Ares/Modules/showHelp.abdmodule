@@ -6,6 +6,7 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+echo "Loading showHelp.abdmodule..."
 showHelp()
 {
 	echo "Usage: aresbd"
@@ -40,4 +41,4 @@ showHelp()
 
 	echo "Quit: "
 	echo "I don't even..."
-}
+}echo "Done."

@@ -6,6 +6,7 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+echo "Loading attackShell.abdmodule..."
 attackShell()
 {
 	if [[ -z "$PORT" ]]; then
@@ -13,4 +14,4 @@ attackShell()
 	else
 		nc -l -p $PORT
 	fi
-}
+}echo "Done."

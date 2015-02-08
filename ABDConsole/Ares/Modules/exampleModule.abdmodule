@@ -6,8 +6,12 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+# The loading text is disabled so that ares doesnt yell at you
+# because it's loading a dummy file
+# echo "Loading exampleModule.abdmodule..."
 exampleModule()
 {
 	# Code
 	echo "HI"
 }
+echo "Done."

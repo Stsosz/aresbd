@@ -6,6 +6,7 @@
 #  Any stupid stuff you do with AresBD.
 
 source ~/Ares/aresbd.conf
+echo "Loading setAttack.abdmodule..."
 setAttack()
 {
 	PS3=$ATTACKPROMPT
@@ -26,4 +27,4 @@ setAttack()
 	        *) echo invalid option;;
 	    esac
 	done
-}
+}echo "Done."
