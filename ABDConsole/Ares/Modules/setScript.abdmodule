@@ -15,4 +15,5 @@ setScript()
 		cd $ARESROOT
 	break
 done
-}echo "Done."
+}
+echo "Done."

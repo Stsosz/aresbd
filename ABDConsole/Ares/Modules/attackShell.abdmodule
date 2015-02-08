@@ -13,4 +13,5 @@ attackShell()
 	else
 		nc -l -p $PORT
 	fi
-}echo "Done."
+}
+echo "Done."

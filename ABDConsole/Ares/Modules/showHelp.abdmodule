@@ -40,4 +40,5 @@ showHelp()
 
 	echo "Quit: "
 	echo "I don't even..."
-}echo "Done."
+}
+echo "Done."

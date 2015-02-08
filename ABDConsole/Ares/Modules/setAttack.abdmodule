@@ -26,4 +26,5 @@ setAttack()
 	        *) echo invalid option;;
 	    esac
 	done
-}echo "Done."
+}
+echo "Done."

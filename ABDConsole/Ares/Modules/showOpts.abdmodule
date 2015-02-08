@@ -25,4 +25,5 @@ showOpts()
 	else
 		echo Attack Mode: $ATTACKMODE
 	fi
-}echo "Done."
+}
+echo "Done."

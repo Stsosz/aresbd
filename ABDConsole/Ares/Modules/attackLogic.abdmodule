@@ -19,4 +19,5 @@ attackLogic()
 	if [[ $ATTACKMODE = "Script" ]]; then
 		attackScript
 	fi
-}echo "Done."
+}
+echo "Done."

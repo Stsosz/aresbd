@@ -15,4 +15,5 @@ attackScript()
 	else
 		nc -l -p $PORT < ~/Ares/Scripts/$SCRIPT
 	fi
-}echo "Done."
+}
+echo "Done."
