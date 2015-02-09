@@ -64,10 +64,12 @@ echo "Done."
 
 read -p "Would you like to copy ~/Ares/abdconsole.bash to /usr/bin/abdconsole?: (Y/N)? "
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    echo "Done!"
     exit
 else
     echo "Copying..."
     cp ~/Ares/abdconsole.bash /usr/bin/abdconsole
     chmod +x /usr/bin/abdconsole
+    echo "Done!"
     exit
 fi
