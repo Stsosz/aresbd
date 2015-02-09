@@ -62,4 +62,12 @@ echo "Removing temporary dir..."
 rm -rf ~/$TEMPFILE
 echo "Done."
 
-exit
+read -p "Would you like to copy ~/Ares/abdconsole.bash to /usr/bin/abdconsole?: (Y/N)? "
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    exit
+else
+    echo "Copying..."
+    cp ~/Ares/abdconsole.bash /usr/bin/abdconsole
+    chmod +x /usr/bin/abdconsole
+    exit
+fi
