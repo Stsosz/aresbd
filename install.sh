@@ -7,11 +7,11 @@
 
 VERSION=Dev
 
-if [[ $UID != 0 ]]; then
-echo "Please run this script with sudo:"
-echo "sudo $0 $*"
-exit 1
-fi
+#if [[ $UID != 0 ]]; then
+#echo "Please run this script with sudo:"
+#echo "sudo $0 $*"
+#exit 1
+#fi
 
 clear
 echo 'Welcome to the Stsosz Systems ABDConsole Installer.'
@@ -28,20 +28,20 @@ echo 'Installing any missing packages...'
 
 if [ -f /usr/bin/apt-get ]; then
     echo "Using apt-get..."
-    apt-get update && apt-get upgrade -y
+    sudo apt-get update && apt-get upgrade -y
     sudo apt-get install -y git
 fi
 
 if [ -f /usr/bin/pacman ]; then
     echo "Using Pacman..."
-    pacman –Syu
-    pacman -S git
+    sudo pacman –Syu
+    sudo pacman -S git
 fi
 
 echo "Done."
 
 echo "Creating temporary dir..."
-TEMPFILE=`mktemp -d -t Ares-Install.XXX`
+TEMPFILE=`sudo mktemp -d -t Ares-Install.XXX`
 echo "Done."
 
 echo "Downloading git repo..."
@@ -54,7 +54,7 @@ git pull --depth=1 origin $VERSION
 echo "Done."
 
 echo "Installing Files..."
-mv -v "$TEMPFILE"/ABDConsole/Ares ~/Ares
+mv -v "$TEMPFILE"/ABDConsole/Ares SHOME/Ares
 echo "Done."
 
 
