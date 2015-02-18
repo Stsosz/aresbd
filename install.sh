@@ -1,5 +1,3 @@
-set -x
-
 #!/bin/sh
 
 #  install.sh
