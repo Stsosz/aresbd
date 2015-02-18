@@ -4,6 +4,9 @@
 #  AresBD
 #
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
+#  Don't be an asshole. Don't use this without permission. I'm not responsible for
+#  Any stupid stuff you do with AresBD.
+
 
 VERSION=Dev
 
