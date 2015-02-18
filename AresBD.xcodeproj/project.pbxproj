@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0A0DFCBE1A81A7FB0091DEE0 /* install.old.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = install.old.sh; path = ABDConsole/Ares/Server/install.old.sh; sourceTree = SOURCE_ROOT; usesTabs = 0; };
+		0A0DFCBE1A81A7FB0091DEE0 /* install.old.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = install.old.sh; path = "Old/Server OLD/Old Installer/install.old.sh"; sourceTree = SOURCE_ROOT; usesTabs = 0; };
 		0A3B9A6E1A824E1500236273 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		0A7EC2631A941E7000009541 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = install.sh; path = ABDConsole/Ares/Server/install.sh; sourceTree = "<group>"; };
 		0A7EC2641A941F2400009541 /* ares.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ares.conf; path = ABDConsole/Ares/Server/ares.conf; sourceTree = "<group>"; };
