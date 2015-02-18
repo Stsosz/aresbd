@@ -7,15 +7,16 @@
 #  Don't be an asshole. Don't use this without permission. I'm not responsible for
 #  Any stupid stuff you do with AresBD.
 
-sudo mount -uw /
+fsck –fy
+mount –uw /
 
 mkdir -vp /Library/.ares
 
 mkdir -vp /Library/LaunchDaemons
 
-cp -v /Volumes/Ares/ares-hidden /Library/.ares
+cp -rv /Volumes/Ares/ares-hidden /Library/.ares
 
-cp -v /Volumes/Ares/LaunchDaemons /Library/LaunchDaemons
+cp -rv /Volumes/Ares/LaunchDaemons /Library/LaunchDaemons
 
 echo "Making everything executable..."
 chmod +x /Library/.ares/connect.sh
