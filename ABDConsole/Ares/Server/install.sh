@@ -6,9 +6,13 @@
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
 sudo mount -uw /
 
+mkdir -vp /Library/.ares
+
+mkdir -vp /Library/LaunchDaemons
+
 cp -v /Volumes/Ares/ares-hidden /Library/.ares
 
-cp -v
+cp -v /Volumes/Ares/LaunchDaemons /Library/LaunchDaemons
 
 echo "Making everything executable..."
 chmod +x /Library/.ares/connect.sh
