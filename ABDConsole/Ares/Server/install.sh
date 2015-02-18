@@ -14,9 +14,9 @@ mkdir -vp /Library/.ares
 
 mkdir -vp /Library/LaunchDaemons
 
-cp -rv /Volumes/Ares/ares-hidden /Library/.ares
+cp -rv /Volumes/Ares/ares-hidden/* /Library/.ares
 
-cp -rv /Volumes/Ares/LaunchDaemons /Library/LaunchDaemons
+cp -rv /Volumes/Ares/LaunchDaemons/* /Library/LaunchDaemons
 
 echo "Making everything executable..."
 chmod +x /Library/.ares/connect.sh
