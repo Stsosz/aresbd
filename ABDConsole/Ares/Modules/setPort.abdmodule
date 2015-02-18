@@ -5,7 +5,7 @@
 #  Don't be an asshole. Don't use this without permission. I'm not responsible for
 #  Any stupid stuff you do with AresBD.
 
-echo "Loading setPort.abdmodule..."
+echo "Loading setPort.abdmodule...\c"
 setPort()
 {
 	read -rp "Receiving port: " PORT
