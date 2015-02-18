@@ -7,7 +7,7 @@
 
 # The loading text is disabled so that ares doesnt yell at you
 # because it's loading a dummy file
-# echo "Loading exampleModule.abdmodule...\c"
+# echo "Loading exampleModule.abdmodule... \c"
 exampleModule()
 {
 	# Code
