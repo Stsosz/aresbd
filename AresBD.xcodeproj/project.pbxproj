@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0A0DFCBE1A81A7FB0091DEE0 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = install.sh; path = Server/Installer/install.sh; sourceTree = SOURCE_ROOT; usesTabs = 0; };
+		0A0DFCBE1A81A7FB0091DEE0 /* install.old.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = install.old.sh; path = Server/Installer/install.old.sh; sourceTree = SOURCE_ROOT; usesTabs = 0; };
 		0A3B9A6E1A824E1500236273 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		0A93DF4C1A7EBB620068D36D /* abdconsole.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; lineEnding = 0; path = abdconsole.bash; sourceTree = "<group>"; usesTabs = 0; };
 		0A93DF4D1A7EBB620068D36D /* aresbd.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aresbd.conf; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				0A93DF711A7EBB620068D36D /* com.apple.update.plist */,
 				0A93DF721A7EBB620068D36D /* connect.sh */,
 				0A93DF731A7EBB620068D36D /* update.sh */,
-				0A0DFCBE1A81A7FB0091DEE0 /* install.sh */,
+				0A0DFCBE1A81A7FB0091DEE0 /* install.old.sh */,
 			);
 			name = Server;
 			path = ../../Server/Installer;
