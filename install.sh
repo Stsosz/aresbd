@@ -1,3 +1,5 @@
+set -ex
+
 #!/bin/sh
 
 #  install.sh
