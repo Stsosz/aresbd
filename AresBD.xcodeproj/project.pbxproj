@@ -127,6 +127,7 @@
 		0A93DF681A7EBB620068D36D /* Server OLD */ = {
 			isa = PBXGroup;
 			children = (
+				0A0DFCBE1A81A7FB0091DEE0 /* install.old.sh */,
 				0A93DF691A7EBB620068D36D /* Installer */,
 			);
 			path = "Server OLD";
@@ -150,7 +151,6 @@
 				0A93DF711A7EBB620068D36D /* com.apple.update.plist */,
 				0A93DF721A7EBB620068D36D /* connect.sh */,
 				0A93DF731A7EBB620068D36D /* update.sh */,
-				0A0DFCBE1A81A7FB0091DEE0 /* install.old.sh */,
 				0A7EC2631A941E7000009541 /* install.sh */,
 				0A7EC2641A941F2400009541 /* ares.conf */,
 			);
