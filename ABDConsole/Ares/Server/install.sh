@@ -11,7 +11,7 @@ echo -e "Running a filesystem check... \c"
 fsck –fy
 echo "Done."
 
-echo -e "Mounting filesystem with read-write access... \c"
+echo -e "Making sure that the filessystem is mounted with read-write access... \c"
 mount –uw /
 echo "Done"
 
