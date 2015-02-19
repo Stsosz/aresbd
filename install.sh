@@ -27,7 +27,7 @@ else
     echo "Starting Installation..."
 fi
 
-echo 'Installing any missing packages...'
+echo -e 'Installing any missing packages... \c'
 sleep 1
 
 if [ -f /usr/bin/apt-get ]; then
@@ -44,11 +44,11 @@ fi
 
 echo "Done."
 
-echo "Creating temporary dir..."
+echo -e "Creating temporary dir... \c"
 TEMPFILE=`sudo mktemp -d -t Ares-Install.XXX`
 echo "Done."
 
-echo "Downloading git repo..."
+echo -e "Downloading git repo... \c"
 
 git init $TEMPFILE
 cd $TEMPFILE
@@ -57,12 +57,12 @@ git pull --depth=1 origin $VERSION
 
 echo "Done."
 
-echo "Installing Files..."
+echo -e "Installing Files... \c"
 mv -v "$TEMPFILE"/ABDConsole/Ares ~/Ares
 echo "Done."
 
 
-echo "Removing temporary dir..."
+echo -e "Removing temporary dir... \c"
 rm -rf ~/$TEMPFILE
 echo "Done."
 
@@ -74,7 +74,7 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
     echo "Done!"
     exit
 else
-    echo "Copying..."
+    echo -e "Copying... \c"
     cp ~/Ares/abdconsole.bash /usr/bin/abdconsole
     chmod +x /usr/bin/abdconsole
     chmod +x ~/Ares/abdconsole.bash
@@ -83,3 +83,5 @@ else
     echo "Done!"
     exit
 fi
+echo "Installation complete. Run the AresBD control panel with:"
+echo "sudo aresbd"
