@@ -28,6 +28,7 @@ else
 fi
 
 echo 'Installing any missing packages...'
+sleep 1
 
 if [ -f /usr/bin/apt-get ]; then
     echo "Using apt-get..."
