@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		0A03F4001A964635002B1F61 /* ares.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ares.conf; sourceTree = "<group>"; };
+		0A03F4011A964635002B1F61 /* com.apple.ares.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.apple.ares.plist; sourceTree = "<group>"; };
+		0A03F4021A964635002B1F61 /* com.apple.update.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.apple.update.plist; sourceTree = "<group>"; };
+		0A03F4031A964635002B1F61 /* connect.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = connect.sh; sourceTree = "<group>"; };
+		0A03F4041A964635002B1F61 /* update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sh; sourceTree = "<group>"; };
 		0A0DFCBE1A81A7FB0091DEE0 /* install.old.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = install.old.sh; path = "Old/Server OLD/Old Installer/install.old.sh"; sourceTree = SOURCE_ROOT; usesTabs = 0; };
 		0A3B9A6E1A824E1500236273 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		0A7EC2631A941E7000009541 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = install.sh; path = ABDConsole/Ares/Server/install.sh; sourceTree = "<group>"; };
-		0A7EC2641A941F2400009541 /* ares.conf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ares.conf; path = ABDConsole/Ares/Server/Ares/ares.conf; sourceTree = "<group>"; };
 		0A93DF4C1A7EBB620068D36D /* abdconsole.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; lineEnding = 0; path = abdconsole.bash; sourceTree = "<group>"; usesTabs = 0; };
 		0A93DF4D1A7EBB620068D36D /* aresbd.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aresbd.conf; sourceTree = "<group>"; };
 		0A93DF4F1A7EBB620068D36D /* attackLogic.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = attackLogic.abdmodule; sourceTree = "<group>"; };
@@ -35,13 +39,22 @@
 		0A93DF6B1A7EBB620068D36D /* gui2.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gui2.bash; sourceTree = "<group>"; };
 		0A93DF6C1A7EBB620068D36D /* gui_template.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gui_template.bash; sourceTree = "<group>"; };
 		0A93DF6D1A7EBB620068D36D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0A93DF701A7EBB620068D36D /* com.apple.ares.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = com.apple.ares.plist; path = ABDConsole/Ares/Server/Ares/com.apple.ares.plist; sourceTree = "<group>"; };
-		0A93DF711A7EBB620068D36D /* com.apple.update.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = com.apple.update.plist; path = ABDConsole/Ares/Server/Ares/com.apple.update.plist; sourceTree = "<group>"; };
-		0A93DF721A7EBB620068D36D /* connect.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = connect.sh; path = ABDConsole/Ares/Server/Ares/connect.sh; sourceTree = SOURCE_ROOT; };
-		0A93DF731A7EBB620068D36D /* update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = update.sh; path = ABDConsole/Ares/Server/Ares/update.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		0A03F3FF1A964635002B1F61 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A03F4001A964635002B1F61 /* ares.conf */,
+				0A03F4011A964635002B1F61 /* com.apple.ares.plist */,
+				0A03F4021A964635002B1F61 /* com.apple.update.plist */,
+				0A03F4031A964635002B1F61 /* connect.sh */,
+				0A03F4041A964635002B1F61 /* update.sh */,
+			);
+			name = Files;
+			path = ABDConsole/Ares/Server/Files;
+			sourceTree = SOURCE_ROOT;
+		};
 		0A93DF4A1A7EBB620068D36D /* ABDConsole */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,12 +160,8 @@
 		0A93DF6F1A7EBB620068D36D /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				0A93DF701A7EBB620068D36D /* com.apple.ares.plist */,
-				0A93DF711A7EBB620068D36D /* com.apple.update.plist */,
-				0A93DF721A7EBB620068D36D /* connect.sh */,
-				0A93DF731A7EBB620068D36D /* update.sh */,
+				0A03F3FF1A964635002B1F61 /* Files */,
 				0A7EC2631A941E7000009541 /* install.sh */,
-				0A7EC2641A941F2400009541 /* ares.conf */,
 			);
 			name = Server;
 			path = ../../Server/Installer;

