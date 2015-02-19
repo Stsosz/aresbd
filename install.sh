@@ -70,6 +70,7 @@ read -p "Would you like to copy ~/Ares/abdconsole.bash to /usr/bin/abdconsole?: 
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
     chmod +x ~/Ares/abdconsole.bash
     rm ~/ABDInstall.sh
+    sudo chown $USER:$USER ~/Ares/
     echo "Done!"
     exit
 else
@@ -78,6 +79,7 @@ else
     chmod +x /usr/bin/abdconsole
     chmod +x ~/Ares/abdconsole.bash
     rm ~/ABDInstall.sh
+    sudo chown $USER:$USER ~/Ares/
     echo "Done!"
     exit
 fi
