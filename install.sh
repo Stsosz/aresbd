@@ -49,7 +49,7 @@ echo -e "Creating temporary dir... \c"
 TEMPFILE=`sudo mktemp -d -t Ares-Install.XXX`
 echo "Done."
 
-echo -e "Downloading git repo... \c"
+echo "Downloading git repo..."
 
 git init $TEMPFILE
 cd $TEMPFILE
