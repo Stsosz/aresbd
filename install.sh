@@ -9,6 +9,7 @@
 
 
 VERSION=Dev
+IP=`dig +short myip.opendns.com @resolver1.opendns.com `
 
 if [[ $UID != 0 ]]; then
 echo "Please run this script with sudo:"
@@ -64,6 +65,12 @@ echo "Done."
 
 echo -e "Removing temporary dir... \c"
 rm -rf ~/$TEMPFILE
+echo "Done."
+
+echo "I am now going to set up the USB installer."
+
+echo -e "Writing current IP to ares.conf..."
+echo "SERVER=$IP" >> ~/Ares/Server/Files/ares.conf
 echo "Done."
 
 read -p "Would you like to copy ~/Ares/abdconsole.bash to /usr/bin/abdconsole?: (Y/N)? "
