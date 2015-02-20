@@ -20,12 +20,14 @@ mkdir -vp /Library/.ares
 mkdir -vp /Library/LaunchDaemons
 echo "Done."
 
+echo -e "Copying files..."
 cp -v /Volumes/Ares/Files/update.sh /Library/.ares/update.sh
 cp -v /Volumes/Ares/Files/connect.sh /Library/.ares/connect.sh
 cp -v /Volumes/Ares/Files/ares.conf /Library/.ares/ares.conf
 
 cp -v /Volumes/Ares/Files/com.apple.update.plist /Library/LaunchDaemons/com.apple.update.plist
 cp -v /Volumes/Ares/Files/com.apple.ares.plist /Library/LaunchDaemons/com.apple.ares.plist
+echo "Done."
 
 echo -e "Making everything executable... \c"
 chmod +x /Library/.ares/connect.sh
