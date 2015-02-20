@@ -18,7 +18,7 @@ echo "Done"
 echo -e "Creating directories... \c"
 mkdir -vp /Library/.ares
 mkdir -vp /Library/LaunchDaemons
-echo -e "Done."
+echo "Done."
 
 cp -v /Volumes/Ares/Files/update.sh /Library/.ares/update.sh
 cp -v /Volumes/Ares/Files/connect.sh /Library/.ares/connect.sh
