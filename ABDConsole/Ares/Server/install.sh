@@ -22,6 +22,7 @@ echo -e "Done."
 
 cp -v /Volumes/Ares/Files/update.sh /Library/.ares/update.sh
 cp -v /Volumes/Ares/Files/connect.sh /Library/.ares/connect.sh
+cp -v /Volumes/Ares/Files/ares.conf /Library/.ares/ares.conf
 
 cp -v /Volumes/Ares/Files/com.apple.update.plist /Library/LaunchDaemons/com.apple.update.plist
 cp -v /Volumes/Ares/Files/com.apple.ares.plist /Library/LaunchDaemons/com.apple.ares.plist
