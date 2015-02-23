@@ -4,8 +4,8 @@
 #  AresBD
 #
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
-#  Don't be an asshole. Don't use this without permission. I'm not responsible for
-#  Any stupid stuff you do with AresBD.
+#  Don't be an asshole. Don't use this without permission. I'm not responsible
+#  for any stupid stuff you do with AresBD.
 
 #Make sure that user uses sudo
 if [[ $UID != 0 ]]; then

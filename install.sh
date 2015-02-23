@@ -4,8 +4,8 @@
 #  AresBD
 #
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
-#  Don't be an asshole. Don't use this without permission. I'm not responsible for
-#  Any stupid stuff you do with AresBD.
+#  Don't be an asshole. Don't use this without permission. I'm not responsible
+#  for any stupid stuff you do with AresBD.
 
 
 VERSION=Dev
@@ -49,7 +49,7 @@ echo -e "Creating temporary dir... \c"
 TEMPFILE=`sudo mktemp -d -t Ares-Install.XXX`
 echo "Done."
 
-echo -e "Downloading git repo... \c"
+echo "Downloading git repo..."
 
 git init $TEMPFILE
 cd $TEMPFILE
