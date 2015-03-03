@@ -1,0 +1,20 @@
+#  attackLogic.abdmodule
+#  AresBD
+#
+#  Copyright (c) 2015 Stsosz Systems. All rights reserved.
+#  Don't be an asshole. Don't use this without permission. I'm not responsible
+#  for any stupid stuff you do with AresBD.
+
+echo -e "Loading aresSplash.abdmodule... \c"
+splash()
+{
+    echo "======================================="
+    echo "                         ____  _____  ";
+    echo "     /\                 |  _ \|  __ \ ";
+    echo "    /  \   _ __ ___  ___| |_) | |  | |";
+    echo "   / /\ \ | '__/ _ \/ __|  _ <| |  | |";
+    echo "  / ____ \| | |  __/\__ \ |_) | |__| |";
+    echo " /_/    \_\_|  \___||___/____/|_____/ ";
+    echo "                              $VERSION ";
+    echo "======================================="
+}
