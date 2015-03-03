@@ -27,39 +27,5 @@ done
 
 cd ~/Ares
 
-splash
-
-# User Menu
-select opt in "${mainoptions[@]}"
-do
-    case $opt in
-        "Set Port")
-			setPort
-			echo ""
-            ;;
-        "Set Script")
-            setScript
-			echo ""
-            ;;
-		"Set Attack Mode")
-			setAttack
-			echo ""
-			;;
-        "Show Options")
-			showOpts
-			echo ""
-            ;;
-		"Start Attack")
-			attackLogic
-			echo ""
-			;;
-        "Quit")
-            break
-            ;;
-		"Help")
-			showHelp
-			echo ""
-			;;
-        *) echo invalid option;;
-    esac
-done
+showSplash
+showMenu

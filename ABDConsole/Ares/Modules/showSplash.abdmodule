@@ -1,4 +1,4 @@
-#  attackLogic.abdmodule
+#  showSplash.abdmodule
 #  AresBD
 #
 #  Copyright (c) 2015 Stsosz Systems. All rights reserved.
@@ -6,7 +6,7 @@
 #  for any stupid stuff you do with AresBD.
 
 echo -e "Loading aresSplash.abdmodule... \c"
-splash()
+showSplash()
 {
     echo "======================================="
     echo "                         ____  _____  ";
