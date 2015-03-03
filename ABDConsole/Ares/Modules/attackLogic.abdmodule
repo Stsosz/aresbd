@@ -11,10 +11,10 @@ attackLogic()
 	if [[ -z "$ATTACKMODE" ]]; then
         echo "You need to set an attack mode first!"
 	fi
-	if [[ $ATTACKMODE = "Shell" ]]; then
+	if [[ $ATTACKMODE = "shell" ]]; then
 		attackShell
 	fi
-	if [[ $ATTACKMODE = "Script" ]]; then
+	if [[ $ATTACKMODE = "shell" ]]; then
 		attackScript
 	fi
 }

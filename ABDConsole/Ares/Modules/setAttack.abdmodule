@@ -13,11 +13,11 @@ setAttack()
 	do
 	    case $opt in
 	        "Shell")
-	            ATTACKMODE=Shell
+	            ATTACKMODE=shell
 				break
 	            ;;
 	        "Script")
-	            ATTACKMODE=Script
+	            ATTACKMODE=shell
 				break
 	            ;;
 	        *) echo invalid option;;
