@@ -14,7 +14,7 @@ attackLogic()
 	if [[ $ATTACKMODE = "shell" ]]; then
 		attackShell
 	fi
-	if [[ $ATTACKMODE = "shell" ]]; then
+	if [[ $ATTACKMODE = "script" ]]; then
 		attackScript
 	fi
 }
