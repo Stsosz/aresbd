@@ -17,7 +17,7 @@ setAttack()
 				break
 	            ;;
 	        "Script")
-	            ATTACKMODE=shell
+	            ATTACKMODE=script
 				break
 	            ;;
 	        *) echo invalid option;;
