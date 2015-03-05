@@ -59,7 +59,7 @@ git pull --depth=1 origin $VERSION
 echo "Done."
 
 echo -e "Installing Files... \c"
-mv -v "$TEMPFILE"/ABDConsole/Ares ~/Ares
+mv "$TEMPFILE"/ABDConsole/Ares ~/Ares
 echo "Done."
 
 
