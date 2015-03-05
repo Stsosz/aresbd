@@ -33,8 +33,8 @@ sleep 1
 
 if [ -f /usr/bin/apt-get ]; then
     echo "Using apt-get..."
-    sudo apt-get update && apt-get upgrade -y
-    sudo apt-get install -y git
+    sudo apt-get update > /dev/null && apt-get upgrade -y > /dev/null
+    sudo apt-get install -y git > /dev/null
 fi
 
 if [ -f /usr/bin/pacman ]; then
