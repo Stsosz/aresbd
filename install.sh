@@ -53,8 +53,8 @@ echo "Downloading git repo..."
 
 git init $TEMPFILE
 cd $TEMPFILE
-git remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git
-git pull --depth=1 origin $VERSION
+git remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git > /dev/null
+git pull --depth=1 origin $VERSION > /dev/null
 
 echo "Done."
 
