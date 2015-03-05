@@ -91,4 +91,4 @@ else
     exit
 fi
 echo "Installation complete. Run the AresBD control panel with:"
-echo "sudo aresbd"
+echo "sudo abdconsole"
