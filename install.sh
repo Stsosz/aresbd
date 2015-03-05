@@ -51,10 +51,10 @@ echo "Done."
 
 echo "Downloading git repo..."
 
-git -q init $TEMPFILE
+git init $TEMPFILE -q
 cd $TEMPFILE
-git -q remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git
-git -q pull --depth=1 origin $VERSION
+git remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git -q
+git pull --depth=1 origin $VERSION  -q
 
 echo "Done."
 
