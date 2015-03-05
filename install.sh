@@ -32,13 +32,13 @@ echo -e 'Installing any missing packages... \c'
 sleep 1
 
 if [ -f /usr/bin/apt-get ]; then
-    echo "Using apt-get..."
+    echo "Using apt-get."
     sudo apt-get update > /dev/null && apt-get upgrade -y > /dev/null
     sudo apt-get install -y git > /dev/null
 fi
 
 if [ -f /usr/bin/pacman ]; then
-    echo "Using Pacman..."
+    echo "Using Pacman."
     sudo pacman –Syu
     sudo pacman -S git
 fi
@@ -51,7 +51,7 @@ echo "Done."
 
 echo "Downloading git repo..."
 
-git init $TEMPFILE
+git init $TEMPFILE > /dev/null
 cd $TEMPFILE
 git remote add origin https://gitlab.stsosz.io/Stsosz/aresbd.git > /dev/null
 git pull --depth=1 origin $VERSION > /dev/null
