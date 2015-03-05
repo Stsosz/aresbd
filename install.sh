@@ -67,7 +67,7 @@ echo -e "Removing temporary dir... \c"
 rm -rf ~/$TEMPFILE
 echo "Done."
 
-echo "I am now going to set up the USB installer."
+echo "Setting up the USB installer..."
 
 echo -e "Writing current IP to ares.conf..."
 echo "SERVER=$IP" >> ~/Ares/Server/Files/ares.conf
