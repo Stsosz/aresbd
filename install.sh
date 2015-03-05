@@ -69,7 +69,10 @@ echo "Done."
 
 echo "Setting up the USB installer..."
 
+read -p "Please enter a port number: (2222) " PORT
+
 echo -e "Writing current IP to ares.conf..."
+echo "PORT=$PORT" >> ~/Ares/Server/Files/ares.conf
 echo "SERVER=$IP" >> ~/Ares/Server/Files/ares.conf
 echo "COMMANDSERVER=$IP" >> ~/Ares/Server/Files/ares.conf
 echo "Done."
