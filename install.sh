@@ -71,6 +71,7 @@ echo "Setting up the USB installer..."
 
 echo -e "Writing current IP to ares.conf..."
 echo "SERVER=$IP" >> ~/Ares/Server/Files/ares.conf
+echo "COMMANDSERVER=$IP" >> ~/Ares/Server/Files/ares.conf
 echo "Done."
 
 read -p "Would you like to copy ~/Ares/abdconsole.bash to /usr/bin/abdconsole?: (Y/N)? "
