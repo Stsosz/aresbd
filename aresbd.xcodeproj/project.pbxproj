@@ -31,12 +31,14 @@
 		0A5F61661AAA36CD00678A20 /* connect.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = connect.sh; sourceTree = "<group>"; };
 		0A5F61671AAA36CD00678A20 /* update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sh; sourceTree = "<group>"; };
 		0A5F61681AAA36CD00678A20 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		0AD2AE9A1AAA6ACD0056826B /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		0A5F61081AAA367A00678A20 = {
 			isa = PBXGroup;
 			children = (
+				0AD2AE9A1AAA6ACD0056826B /* setup.sh */,
 				0A5F614C1AAA36CD00678A20 /* abdconsole.bash */,
 				0A5F614D1AAA36CD00678A20 /* aresbd.conf */,
 				0A5F614F1AAA36CD00678A20 /* LICENSE */,
