@@ -28,3 +28,4 @@ then
     source ~/.bash_profile
 fi
 
+echo "Done!"
