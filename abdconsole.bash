@@ -8,11 +8,11 @@
 #  for any stupid stuff you do with AresBD.
 
 #Make sure that user uses sudo
-if [[ $UID != 0 ]]; then
-echo "Please run again with sudo: "
-echo "sudo $0 $*"
-exit 1
-fi
+#if [[ $UID != 0 ]]; then
+#echo "Please run again with sudo: "
+#echo "sudo $0 $*"
+#exit 1
+#fi
 
 source ~/aresbd/aresbd.conf
 PS3=$MENUPROMPT
