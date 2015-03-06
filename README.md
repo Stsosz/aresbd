@@ -3,4 +3,4 @@ It is designed promarily for deployment on OSX systems.
 
 You can install the control panel with: 
 
-`curl -O https://gitlab.stsosz.io/install.sh && chmod +x install.sh && sudo ./install.sh`
+git clone https://gitlab.stsosz.io/Stsosz/aresbd.git
