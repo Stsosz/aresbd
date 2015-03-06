@@ -19,9 +19,12 @@ chown -R $USER:$USER ~/aresbd/
 if [ -f ~/.bashrc ];
 then
     echo PATH="$PATH"":~/aresbd/" >> ~/.bashrc
+    source ~/.bashrc
 fi
 
 if [ -f ~/.bash_profile ];
 then
     echo PATH="$PATH"":~/aresbd/" >> ~/.bash_profile
+    source ~/.bash_profile
 fi
+
