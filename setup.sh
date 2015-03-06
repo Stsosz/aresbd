@@ -16,14 +16,12 @@ echo "COMMANDSERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
 chmod +x ~/aresbd/abdconsole.bash
 chown -R $USER:$USER ~/aresbd/
 
-read -p "Would you like to copy abdconsole.bash to /usr/bin?: (Y/N)? "
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    echo "Done!"
-    exit
-else
-    echo -e "Copying... \c"
-    cp ~/aresbd/abdconsole.bash /usr/bin/abdconsole
-    chmod +x /usr/bin/abdconsole
-    echo "Done!"
-    exit
+if [ -f ~/.bashrc ];
+then
+    echo "$PATH"":~/aresbd/" >> ~/.bashrc
+fi
+
+if [ -f ~/.bash_profile ];
+then
+    echo "$PATH"":~/aresbd/" >> ~/.bash_profile
 fi

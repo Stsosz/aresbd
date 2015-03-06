@@ -14,18 +14,18 @@ echo "sudo $0 $*"
 exit 1
 fi
 
-source ~/Ares/aresbd.conf
+source ~/aresbd/aresbd.conf
 PS3=$MENUPROMPT
 
 # Load Modules
-cd ~/Ares/Modules
+cd ~/aresbd/Modules
 for file in *.abdmodule ; do
   if [ -f "$file" ] ; then
     source "$file"
   fi
 done
 
-cd ~/Ares
+cd ~/aresbd
 
 showSplash
 showMenu

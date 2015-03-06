@@ -13,7 +13,7 @@ attackScript()
 	elif [[ -z "$SCRIPT" ]]; then
 		echo "You need to set the script first!"
 	else
-		nc -l -p $PORT < ~/Ares/Scripts/$SCRIPT
+		nc -l -p $PORT < ~/aresbd/Scripts/$SCRIPT
 	fi
 }
 echo "Done."
