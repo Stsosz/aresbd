@@ -28,6 +28,6 @@ then
     source ~/.bash_profile
 fi
 
-rm ~/setup.sh
+rm ~/aresbd/setup.sh
 
 echo "Done!"
