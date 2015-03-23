@@ -6,7 +6,7 @@
 #  Copyright (c) 2015 Stsosz Systems and Ohnx. All rights reserved.
 #  Don't be an asshole. Don't use this without permission. I'm not responsible
 #  for any stupid stuff you do with AresBD.
-#  This simulates a Command-Q Keypress and 3 Command-W Keypresses every minute.
+#  This simulates a Command-W Keypress and 3 Command-Q Keypresses every minute.
 
 while true; do
 osascript -e 'tell application "System Events" to keystroke "w" using command down'
