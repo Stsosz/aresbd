@@ -28,4 +28,6 @@ then
     source ~/.bash_profile
 fi
 
+rm ~/setup.sh
+
 echo "Done!"
