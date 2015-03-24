@@ -51,7 +51,7 @@ echo ""
 echo "Install Complete."
 echo ""
 
-echo "Press enter to shut down..."
+echo "Press enter to shut down or CTRL-C to exit..."
 read shutdown
 
 echo "Shutting down..."
