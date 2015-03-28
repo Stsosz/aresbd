@@ -7,7 +7,7 @@
 
 setIp()
 {
-    cp $aresroot/Server/template $aresroot/Server/ares.conf
+    cp $aresroot/Server/template $aresroot/Server/Files/ares.conf
 	PS3=$ipprompt
 	select opt in "${ipoptions[@]}"
 	do
