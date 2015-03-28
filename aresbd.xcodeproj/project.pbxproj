@@ -25,7 +25,6 @@
 		0A5F615E1AAA36CD00678A20 /* AppTroll */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AppTroll; sourceTree = "<group>"; };
 		0A5F615F1AAA36CD00678A20 /* Command-Q */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Command-Q"; sourceTree = "<group>"; };
 		0A5F61601AAA36CD00678A20 /* KillFPS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = KillFPS; sourceTree = "<group>"; };
-		0A5F61631AAA36CD00678A20 /* ares.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ares.conf; sourceTree = "<group>"; };
 		0A5F61641AAA36CD00678A20 /* com.apple.ares.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.apple.ares.plist; sourceTree = "<group>"; };
 		0A5F61651AAA36CD00678A20 /* com.apple.update.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.apple.update.plist; sourceTree = "<group>"; };
 		0A5F61661AAA36CD00678A20 /* connect.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = connect.sh; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		0A5F61681AAA36CD00678A20 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		0AD2AE9A1AAA6ACD0056826B /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
 		0AF689E31AC647A100480EF4 /* setIp.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = setIp.abdmodule; sourceTree = "<group>"; };
+		0AF689E41AC64F8700480EF4 /* template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = template; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -91,7 +91,7 @@
 		0A5F61621AAA36CD00678A20 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A5F61631AAA36CD00678A20 /* ares.conf */,
+				0AF689E41AC64F8700480EF4 /* template */,
 				0A5F61641AAA36CD00678A20 /* com.apple.ares.plist */,
 				0A5F61651AAA36CD00678A20 /* com.apple.update.plist */,
 				0A5F61661AAA36CD00678A20 /* connect.sh */,
