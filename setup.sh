@@ -7,14 +7,7 @@
 #  Don't use this without permission. I'm not responsible
 #  for any stupid stuff you do with AresBD.
 
-IP=`dig +short myip.opendns.com @resolver1.opendns.com `
-
-echo "SERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
-echo "COMMANDSERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
-
-
 chmod +x ~/aresbd/abdconsole
-chown -R $USER:$USER ~/aresbd/
 
 if [ -f ~/.bashrc ];
 then
