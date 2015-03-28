@@ -5,9 +5,11 @@
 #  Don't use this without permission. I'm not responsible
 #  for any stupid stuff you do with AresBD.
 
+echo "====================================================================="
 echo "Before you can use AresBD, you need to select a network option"
 echo "If you are running this off of a laptop, you will want to chose LAN"
 echo "If you are running this off of a VPS, you will want to chose WAN"
+echo "====================================================================="
 
 source $aresmodules/setIp.abdmodule
 
