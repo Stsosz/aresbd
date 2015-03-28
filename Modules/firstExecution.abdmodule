@@ -11,6 +11,6 @@ echo "If you are running this off of a VPS, you will want to chose WAN"
 
 source $aresmodules/setIp.abdmodule
 
-setip
+setIp
 
 rm $aresmodules/firstExecution.abdmodule
