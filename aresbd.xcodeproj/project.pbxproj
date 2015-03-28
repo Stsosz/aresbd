@@ -84,6 +84,7 @@
 		0A5F61611AAA36CD00678A20 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				0AF689E41AC64F8700480EF4 /* template */,
 				0A5F61621AAA36CD00678A20 /* Files */,
 				0A5F61681AAA36CD00678A20 /* install.sh */,
 			);
@@ -93,7 +94,6 @@
 		0A5F61621AAA36CD00678A20 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				0AF689E41AC64F8700480EF4 /* template */,
 				0A5F61641AAA36CD00678A20 /* com.apple.ares.plist */,
 				0A5F61651AAA36CD00678A20 /* com.apple.update.plist */,
 				0A5F61661AAA36CD00678A20 /* connect.sh */,
