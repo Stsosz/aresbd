@@ -32,6 +32,7 @@
 		0A5F61671AAA36CD00678A20 /* update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sh; sourceTree = "<group>"; };
 		0A5F61681AAA36CD00678A20 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		0AD2AE9A1AAA6ACD0056826B /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
+		0AF689E31AC647A100480EF4 /* setIp.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = setIp.abdmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -56,6 +57,7 @@
 				0A5F61521AAA36CD00678A20 /* attackScript.abdmodule */,
 				0A5F61531AAA36CD00678A20 /* attackShell.abdmodule */,
 				0A5F61541AAA36CD00678A20 /* exampleModule.abdmodule */,
+				0AF689E31AC647A100480EF4 /* setIp.abdmodule */,
 				0A5F61551AAA36CD00678A20 /* setAttack.abdmodule */,
 				0A5F61561AAA36CD00678A20 /* setPort.abdmodule */,
 				0A5F61571AAA36CD00678A20 /* setScript.abdmodule */,

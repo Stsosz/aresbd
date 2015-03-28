@@ -8,10 +8,10 @@
 #  for any stupid stuff you do with AresBD.
 
 source ~/aresbd/aresbd.conf
-PS3=$MENUPROMPT
+PS3=$menuprompt
 
 # Load Modules
-cd ~/aresbd/Modules
+cd $aresmodules
 for file in *.abdmodule ; do
   if [ -f "$file" ] ; then
     source "$file"

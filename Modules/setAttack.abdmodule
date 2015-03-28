@@ -8,21 +8,21 @@
 echo -e "Loading setAttack.abdmodule... \c"
 setAttack()
 {
-	PS3=$ATTACKPROMPT
+	PS3=$attackprompt
 	select opt in "${attackoptions[@]}"
 	do
 	    case $opt in
 	        "Shell")
-	            ATTACKMODE=shell
+	            attackmode=shell
 				break
 	            ;;
 	        "Script")
-	            ATTACKMODE=script
+	            attackmode=script
 				break
 	            ;;
 	        *) echo invalid option;;
 	    esac
 	done
-PS3=$MENUPROMPT
+PS3=$menuprompt
 }
 echo "Done."

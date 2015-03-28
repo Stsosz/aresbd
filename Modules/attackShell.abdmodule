@@ -8,10 +8,10 @@
 echo -e "Loading attackShell.abdmodule... \c"
 attackShell()
 {
-	if [[ -z "$PORT" ]]; then
+	if [[ -z "$port" ]]; then
 		echo "You need to set the port first!"
 	else
-		nc -l -p $PORT
+		nc -l -p $port
 	fi
 }
 echo "Done."

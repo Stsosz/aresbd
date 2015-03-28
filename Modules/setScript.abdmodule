@@ -8,11 +8,11 @@
 echo -e "Loading setScript.abdmodule... \c"
 setScript()
 {
-	cd $ARESSCRIPTROOT
-	PS3=$SCRIPTPROMPT
-	select SCRIPT in *; do
-		PS3=$MENUPROMPT
-		cd $ARESROOT
+	cd $aresscriptroot
+	PS3=$scriptprompt
+	select script in *; do
+		PS3=$menuprompt
+		cd $aresroot
 	break
 done
 }

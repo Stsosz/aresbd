@@ -8,6 +8,6 @@
 echo -e "Loading setPort.abdmodule... \c"
 setPort()
 {
-	read -rp "Receiving port: " PORT
+	read -rp "Receiving port: " port
 }
 echo "Done."

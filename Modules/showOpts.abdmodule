@@ -8,22 +8,22 @@
 echo -e "Loading showOpts.abdmodule... \c"
 showOpts()
 {
-	if [[ -z "$PORT" ]]; then
+	if [[ -z "$port" ]]; then
 		echo "No port chosen. "
 	else
-		echo Port: $PORT
+		echo "Port: $port"
 	fi
 	
-	if [[ -z "$SCRIPT" ]]; then
+	if [[ -z "$script" ]]; then
 		echo "No script chosen. "
 	else
-		echo Script: $SCRIPT
+		echo "Script: $script"
 	fi
 	
-	if [[ -z "$ATTACKMODE" ]]; then
+	if [[ -z "$attackmode" ]]; then
 		echo "No attack mode chosen. "
 	else
-		echo Attack Mode: $ATTACKMODE
+		echo "Attack Mode: $attackmode"
 	fi
 }
 echo "Done."

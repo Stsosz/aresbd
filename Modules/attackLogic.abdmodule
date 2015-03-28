@@ -8,13 +8,13 @@
 echo -e "Loading attackLogic.abdmodule... \c"
 attackLogic()
 {
-	if [[ -z "$ATTACKMODE" ]]; then
+	if [[ -z "$attackmode" ]]; then
         echo "You need to set an attack mode first!"
 	fi
-	if [[ $ATTACKMODE = "shell" ]]; then
+	if [[ $attackmode = "shell" ]]; then
 		attackShell
 	fi
-	if [[ $ATTACKMODE = "script" ]]; then
+	if [[ $attackmode = "script" ]]; then
 		attackScript
 	fi
 }

@@ -23,6 +23,10 @@ showMenu()
                 setAttack
                 echo ""
                 ;;
+            "Set IP")
+                setIp
+                echo ""
+                ;;
             "Show Options")
                 showOpts
                 echo ""
@@ -38,6 +42,7 @@ showMenu()
                 showHelp
                 echo ""
 			;;
+
             *) echo invalid option;;
         esac
     done
