@@ -1,0 +1,16 @@
+#  firstExecution.abdmodule
+#  AresBD
+#
+#  Copyright (c) 2015 Stsosz Systems. All rights reserved.
+#  Don't use this without permission. I'm not responsible
+#  for any stupid stuff you do with AresBD.
+
+echo "Before you can use AresBD, you need to select a network option"
+echo "If you are running this off of a laptop, you will want to chose LAN"
+echo "If you are running this off of a VPS, you will want to chose WAN"
+
+source $aresmodules/setIp.abdmodule
+
+setip
+
+rm $aresmodules/firstExecution.abdmodule

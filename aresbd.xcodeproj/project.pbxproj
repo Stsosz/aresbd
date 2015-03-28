@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0A5F614C1AAA36CD00678A20 /* abdconsole.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = abdconsole.bash; sourceTree = "<group>"; };
+		0A5F614C1AAA36CD00678A20 /* abdconsole */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = abdconsole; sourceTree = "<group>"; };
 		0A5F614D1AAA36CD00678A20 /* aresbd.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aresbd.conf; sourceTree = "<group>"; };
 		0A5F614F1AAA36CD00678A20 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0A5F61511AAA36CD00678A20 /* attackLogic.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attackLogic.abdmodule; sourceTree = "<group>"; };
@@ -33,6 +33,7 @@
 		0AD2AE9A1AAA6ACD0056826B /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
 		0AF689E31AC647A100480EF4 /* setIp.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = setIp.abdmodule; sourceTree = "<group>"; };
 		0AF689E41AC64F8700480EF4 /* template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = template; sourceTree = "<group>"; };
+		0AF689E51AC6C2B500480EF4 /* firstExecution.abdmodule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = firstExecution.abdmodule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -40,7 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				0AD2AE9A1AAA6ACD0056826B /* setup.sh */,
-				0A5F614C1AAA36CD00678A20 /* abdconsole.bash */,
+				0A5F614C1AAA36CD00678A20 /* abdconsole */,
 				0A5F614D1AAA36CD00678A20 /* aresbd.conf */,
 				0A5F614F1AAA36CD00678A20 /* LICENSE */,
 				0A5F615C1AAA36CD00678A20 /* README.md */,
@@ -57,6 +58,7 @@
 				0A5F61521AAA36CD00678A20 /* attackScript.abdmodule */,
 				0A5F61531AAA36CD00678A20 /* attackShell.abdmodule */,
 				0A5F61541AAA36CD00678A20 /* exampleModule.abdmodule */,
+				0AF689E51AC6C2B500480EF4 /* firstExecution.abdmodule */,
 				0AF689E31AC647A100480EF4 /* setIp.abdmodule */,
 				0A5F61551AAA36CD00678A20 /* setAttack.abdmodule */,
 				0A5F61561AAA36CD00678A20 /* setPort.abdmodule */,
