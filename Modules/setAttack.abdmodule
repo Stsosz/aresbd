@@ -5,7 +5,6 @@
 #  Don't use this without permission. I'm not responsible
 #  for any stupid stuff you do with AresBD.
 
-echo -e "Loading setAttack.abdmodule... \c"
 setAttack()
 {
 	PS3=$attackprompt
@@ -25,4 +24,3 @@ setAttack()
 	done
 PS3=$menuprompt
 }
-echo "Done."

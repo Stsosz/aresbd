@@ -5,7 +5,6 @@
 #  Don't use this without permission. I'm not responsible
 #  for any stupid stuff you do with AresBD.
 
-echo -e "Loading attackShell.abdmodule... \c"
 attackShell()
 {
 	if [[ -z "$port" ]]; then
@@ -14,4 +13,3 @@ attackShell()
 		nc -l -p $port
 	fi
 }
-echo "Done."

@@ -5,7 +5,6 @@
 #  Don't use this without permission. I'm not responsible
 #  for any stupid stuff you do with AresBD.
 
-echo -e "Loading showHelp.abdmodule... \c"
 showHelp()
 {
 	echo "Usage: aresbd"
@@ -41,4 +40,3 @@ showHelp()
 	echo "Quit: "
 	echo "I don't even..."
 }
-echo "Done."

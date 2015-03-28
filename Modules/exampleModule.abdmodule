@@ -5,12 +5,8 @@
 #  Don't use this without permission. I'm not responsible
 #  for any stupid stuff you do with AresBD.
 
-# The loading text is disabled so that ares doesnt yell at you
-# because it's loading a dummy file
-# echo -e "Loading exampleModule.abdmodule... \c"
 exampleModule()
 {
 	# Code
 	echo "HI"
 }
-# echo "Done."
