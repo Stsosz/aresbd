@@ -13,7 +13,7 @@ echo "SERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
 echo "COMMANDSERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
 
 
-chmod +x ~/aresbd/abdconsole.bash
+chmod +x ~/aresbd/abdconsole
 chown -R $USER:$USER ~/aresbd/
 
 if [ -f ~/.bashrc ];
