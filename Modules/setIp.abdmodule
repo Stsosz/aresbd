@@ -35,4 +35,3 @@ setIp()
 	done
     PS3=$menuprompt
 }
-

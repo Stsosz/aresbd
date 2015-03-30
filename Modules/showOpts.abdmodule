@@ -12,13 +12,13 @@ showOpts()
 	else
 		echo "Port: $port"
 	fi
-	
+
 	if [[ -z "$script" ]]; then
 		echo "No script chosen. "
 	else
 		echo "Script: $script"
 	fi
-	
+
 	if [[ -z "$attackmode" ]]; then
 		echo "No attack mode chosen. "
 	else

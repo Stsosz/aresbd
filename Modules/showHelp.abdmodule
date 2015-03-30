@@ -9,30 +9,30 @@ showHelp()
 {
 	echo "Usage: aresbd"
 	echo ""
-	
+
 	echo "Set Port: "
 	echo "Set the port to listen on"
 	echo ""
-	
+
 	echo "Set Script: "
 	echo "Choose a script to send to the target in Script mode"
 	echo ""
-	
+
 	echo "Set Attack Mode: "
 	echo "Chose from 2 modes: Script and Shell"
 	echo "In script mode, the selected script is"
 	echo "fed line-by-line to the target."
 	echo "In Shell mode, a remote shell, almost"
-	echo "like SSH, is connected to the target."	
+	echo "like SSH, is connected to the target."
 	echo ""
-	
+
 	echo "Show Options: "
 	echo "List all user selected options."
 	echo ""
-	
+
 	echo "Start Attack: "
 	echo "Initiate either a Shell or Script attack."
-	
+
 	echo "Help: "
 	echo "Show this message!"
 	echo ""
