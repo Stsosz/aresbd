@@ -1,6 +1,3 @@
-# User Files
-xcuserdata
-*.xccheckout
 # Object files
 *.o
 *.ko

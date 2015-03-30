@@ -7,14 +7,14 @@
 
 setIp()
 {
-    cp $aresroot/Server/template $aresroot/Server/Files/ares.conf
+    cp "$aresroot"/Server/template "$aresroot"/Server/Files/ares.conf
 	PS3=$ipprompt
 	select opt in "${ipoptions[@]}"
 	do
 	    case $opt in
 	        "LAN")
 	            read -rp "Interface: " interface
-                IP=`ifconfig $INTERFACE | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'`
+                IP=$(ifconfig "$INTERFACE" | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
                 echo "Writing to config file..."
                 echo "SERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
                 echo "COMMANDSERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
@@ -23,7 +23,7 @@ setIp()
 	            ;;
 	        "WAN")
 	            echo "Finding external IP..."
-                IP=`dig +short myip.opendns.com @resolver1.opendns.com`
+                IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
                 echo "Writing to config file..."
                 echo "SERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
                 echo "COMMANDSERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
@@ -32,6 +32,8 @@ setIp()
 	            ;;
 	        *) echo invalid option;;
 	    esac
-	done
-    PS3=$menuprompt
+	read -rp "Port to connect on: " PORT
+  echo PORT="$PORT" >> ~/aresbd/Server/Files/ares.conf
+  done
+  PS3=$menuprompt
 }

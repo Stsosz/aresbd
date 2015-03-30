@@ -11,8 +11,8 @@ echo "If you are running this off of a laptop, you will want to chose LAN"
 echo "If you are running this off of a VPS, you will want to chose WAN"
 echo "====================================================================="
 
-source $aresmodules/setIp.abdmodule
+source "$aresmodules"/setIp.abdmodule
 
 setIp
 
-rm $aresmodules/firstExecution.abdmodule
+rm "$aresmodules"/firstExecution.abdmodule

@@ -7,11 +7,11 @@
 
 setScript()
 {
-	cd $aresscriptroot
+	cd "$aresscriptroot"
 	PS3=$scriptprompt
 	select script in *; do
 		PS3=$menuprompt
-		cd $aresroot
+		cd "$aresroot"
 	break
 done
 }

@@ -11,7 +11,7 @@ source ~/aresbd/aresbd.conf
 PS3=$menuprompt
 
 # Load Modules
-cd $aresmodules
+cd "$aresmodules"
 for file in *.abdmodule ; do
   if [ -f "$file" ] ; then
     source "$file"

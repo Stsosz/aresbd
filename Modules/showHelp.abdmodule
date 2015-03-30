@@ -7,7 +7,7 @@
 
 showHelp()
 {
-	echo "Usage: aresbd"
+	echo "Usage: abdconsole"
 	echo ""
 
 	echo "Set Port: "
