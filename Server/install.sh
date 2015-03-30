@@ -52,7 +52,7 @@ echo "Install Complete."
 echo ""
 
 echo "Press enter to shut down or CTRL-C to exit..."
-read shutdown
+read
 
 echo "Shutting down..."
 shutdown -h now
