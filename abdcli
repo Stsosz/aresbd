@@ -57,9 +57,4 @@ then
   showOptions
 fi
 
-if [ "$command" != "*" ]
-then
-  echo 123
-fi
-
 done
