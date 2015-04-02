@@ -24,11 +24,37 @@ showSplash
 
 while [ "$command" != "exit" ]
 do
-  echo -n "abd>"
+  echo -n "abd> "
   read command
 
 if [ "$command" = "set port" ]
 then
   setPort
 fi
+
+if [ "$command" = "set ip" ]
+then
+  setIp
+fi
+
+if [ "$command" = "set attack mode" ]
+then
+  setAttack
+fi
+
+if [ "$command" = "set script" ]
+then
+  setScript
+fi
+
+if [ "$command" = "set port" ]
+then
+  setPort
+fi
+
+if [ "$command" = "show options" ]
+then
+  showOptions
+fi
+
 done
