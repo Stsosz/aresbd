@@ -15,6 +15,4 @@ source "$aresmodules"/setIp.abdmodule
 
 setIp
 
-echo "PORT=2222" >> ~/aresbd/Server/files/ares.conf
-
 rm "$aresmodules"/firstExecution.abdmodule
