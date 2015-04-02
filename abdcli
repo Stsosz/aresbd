@@ -64,7 +64,7 @@ fi
 
 if [ "$command" = "start attack" ]
 then
-  showOptions
+  attackLogic
 fi
 
 done
