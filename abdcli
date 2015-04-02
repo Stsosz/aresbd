@@ -72,6 +72,7 @@ then
   clear
 fi
 
-echo 123
-
 done
+else
+  echo 123
+fi
