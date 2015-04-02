@@ -12,9 +12,9 @@ PS3=$menuprompt
 
 # Load Modules
 cd "$aresmodules"
-for file in *.abdmodule ; do
-  if [ -f "$file" ] ; then
-    source "$file"
+for module in *.abdmodule ; do
+  if [ -f "$module" ] ; then
+    source "$module"
   fi
 done
 
