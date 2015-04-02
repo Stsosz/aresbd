@@ -67,4 +67,9 @@ then
   attackLogic
 fi
 
+if [ "$command" = "clear" ]
+then
+  clear
+fi
+
 done
