@@ -73,6 +73,3 @@ then
 fi
 
 done
-else
-  echo 123
-fi
