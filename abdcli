@@ -54,7 +54,9 @@ do
 
   if [ "$command" = "set port" ]
   then
+    echo 123
     setPort
+    echo 123
   fi
 
   if [ "$command" = "show options" ]
@@ -76,7 +78,7 @@ do
   then
     clear
   fi
-  
+
   read -rp "$prompt" command
 
 done
