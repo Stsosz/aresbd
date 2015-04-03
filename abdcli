@@ -52,7 +52,7 @@ do
     setScript
   fi
 
-  if [ "$command" == "set port" ]
+  if [ "$command" = "set port" ]
   then
     setPort
   fi
