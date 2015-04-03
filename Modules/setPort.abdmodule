@@ -7,5 +7,5 @@
 
 setPort()
 {
-	read -p "Receiving port: " port
+	read -rp "Receiving port: " port
 }
