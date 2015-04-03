@@ -55,6 +55,7 @@ do
   if [ "$command" = "set port" ]
   then
     setPort
+    echo
   fi
 
   if [ "$command" = "show options" ]
