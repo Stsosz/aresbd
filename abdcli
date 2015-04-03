@@ -76,6 +76,8 @@ do
   then
     clear
   fi
+  
+  read -rp "$prompt" command
 
 done
 
