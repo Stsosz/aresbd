@@ -20,7 +20,7 @@ done
 
 cd ~/aresbd
 
-# prompt="abd > "
+prompt="abd > "
 
 showSplash
 
@@ -74,6 +74,8 @@ if [ "$command" = "clear" ]
 then
   clear
 fi
+
+prompt="abd $attackmode> "
 
 done
 
