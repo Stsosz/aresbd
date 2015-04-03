@@ -26,58 +26,60 @@ showSplash
 
 while [ "$command" != "exit" ]
 do
+  if [[ -z "$attackmode" ]]; then
+      prompt="abd > "
+  else
+      prompt="abd $attackmode > "
+	fi
+
   echo -n "$prompt"
-  display_attackmode="$attackmode "
-  prompt="abd$display_attackmode > "
+
   read command
 
-if [ "$command" = "set port" ]
-then
-  setPort
-fi
+  if [ "$command" = "set port" ]
+    then
+    setPort
+  fi
 
-if [ "$command" = "set ip" ]
-then
-  setIp
-fi
+  if [ "$command" = "set ip" ]
+    then
+    setIp
+  fi
 
-if [ "$command" = "set attack mode" ]
-then
-  setAttack
-fi
+  if [ "$command" = "set attack mode" ]
+    then
+    setAttack
+  fi
 
-if [ "$command" = "set script" ]
-then
-  setScript
-fi
+  if [ "$command" = "set script" ]
+  then
+    setScript
+  fi
 
-if [ "$command" = "set port" ]
-then
-  setPort
-fi
+  if [ "$command" = "set port" ]
+  then
+    setPort
+  fi
 
-if [ "$command" = "show options" ]
-then
-  showOpts
-fi
+  if [ "$command" = "show options" ]
+  then
+    showOpts
+  fi
 
-# if [ "$command" = "show help" ]
-# then
-#   showHelp
-# fi
+  # if [ "$command" = "show help" ]
+  # then
+  #   showHelp
+  # fi
 
-if [ "$command" = "start attack" ]
-then
-  attackLogic
-fi
+  if [ "$command" = "start attack" ]
+  then
+    attackLogic
+  fi
 
-if [ "$command" = "clear" ]
-then
-  clear
-fi
-
-display_attackmode="$attackmode "
-prompt="abd$display_attackmode> "
+  if [ "$command" = "clear" ]
+  then
+    clear
+  fi
 
 done
 
