@@ -26,11 +26,11 @@ while [ "$command" != "exit" ]
 do
   if [[ -z "$attackmode" ]]; then
       prompt="abd > "
+      read -rp "$prompt" command
   else
       prompt="abd $attackmode > "
+      read -rp "$prompt" command
 	fi
-
-  read -rp "$prompt" command
 
   if [ "$command" = "set port" ]
     then
@@ -54,9 +54,7 @@ do
 
   if [ "$command" = "set port" ]
   then
-    echo 123
     setPort
-    echo 123
   fi
 
   if [ "$command" = "show options" ]
@@ -78,8 +76,6 @@ do
   then
     clear
   fi
-
-  read -rp "$prompt" command
 
 done
 
