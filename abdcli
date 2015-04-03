@@ -81,6 +81,8 @@ do
     clear
   fi
 
+  echo -n "$prompt"
+
 done
 
 echo "Exiting..."
