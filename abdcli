@@ -60,10 +60,10 @@ then
   showOpts
 fi
 
-if [ "$command" = "show help" ]
-then
-  showHelp
-fi
+# if [ "$command" = "show help" ]
+# then
+#   showHelp
+# fi
 
 if [ "$command" = "start attack" ]
 then
