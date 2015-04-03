@@ -35,7 +35,9 @@ setIp()
 	        *) echo invalid option;;
 	    esac
 	read -rp "Port to connect to: " PORT
+  echo "Writing to config file..."
   echo PORT="$PORT" >> ~/aresbd/Server/Files/ares.conf
+  echo "Done!"
   done
   PS3=$menuprompt
 }
