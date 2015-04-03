@@ -20,8 +20,6 @@ done
 
 cd ~/aresbd
 
-prompt="abd > "
-
 showSplash
 
 while [ "$command" != "exit" ]
@@ -32,9 +30,7 @@ do
       prompt="abd $attackmode > "
 	fi
 
-  echo -n "$prompt"
-
-  read command
+  read -rp "$prompt" command
 
   if [ "$command" = "set port" ]
     then
@@ -80,8 +76,6 @@ do
   then
     clear
   fi
-
-  echo -n "$prompt"
 
 done
 
