@@ -42,7 +42,7 @@ do
     setIp
   fi
 
-  if [ "$command" = "set attack mode" ]
+  if [ "$command" = "set attack" ]
     then
     setAttack
   fi
