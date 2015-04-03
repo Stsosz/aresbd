@@ -20,7 +20,7 @@ done
 
 cd ~/aresbd
 
-prompt="abd> "
+prompt="abd > "
 
 showSplash
 
