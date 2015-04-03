@@ -37,7 +37,7 @@ do
     setPort
   fi
 
-  if [ "$command" = "set ip" ]
+  if [ "$command" = "setup installer" ]
     then
     setIp
   fi
