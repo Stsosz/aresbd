@@ -27,8 +27,7 @@ showSplash
 while [ "$command" != "exit" ]
 do
   echo -n "$prompt"
-  display_attackmode="$attackmode "
-  prompt="abd$display_attackmode> "
+  prompt="abd $attackmode > "
   read command
 
 if [ "$command" = "set port" ]
