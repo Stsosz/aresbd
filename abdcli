@@ -52,7 +52,7 @@ do
     setScript
   fi
 
-  if [ "$command" = "set port" ]
+  if [ "$command" == "set port" ]
   then
     setPort
   fi
@@ -76,8 +76,6 @@ do
   then
     clear
   fi
-
-sleep .01
 
 done
 
