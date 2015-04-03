@@ -77,6 +77,8 @@ do
     clear
   fi
 
+sleep .01
+
 done
 
 echo "Exiting..."
