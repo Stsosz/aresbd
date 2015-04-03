@@ -52,11 +52,6 @@ do
     setScript
   fi
 
-  if [ "$command" = "set port" ]
-  then
-    setPort
-  fi
-
   if [ "$command" = "show options" ]
   then
     showOpts
