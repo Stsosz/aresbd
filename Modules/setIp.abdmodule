@@ -40,4 +40,4 @@ setIp()
   echo "Done!"
   done
   PS3=$menuprompt
-}
+  }
