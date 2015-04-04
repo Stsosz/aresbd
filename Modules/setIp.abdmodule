@@ -16,7 +16,6 @@ setIp()
 	              read -rp "Interface: " INTERFACE
                 IP=$(ifconfig "$INTERFACE" | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
                 echo "Writing to config file..."
-                echo "PORT=2222" >> ~/aresbd/Server/files/ares.conf
                 echo "SERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
                 echo "COMMANDSERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
                 echo "Done!"
@@ -26,7 +25,6 @@ setIp()
 	              echo "Finding external IP..."
                 IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
                 echo "Writing to config file..."
-                echo "PORT=2222" >> ~/aresbd/Server/files/ares.conf
                 echo "SERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
                 echo "COMMANDSERVER=$IP" >> ~/aresbd/Server/Files/ares.conf
                 echo "Done!"
